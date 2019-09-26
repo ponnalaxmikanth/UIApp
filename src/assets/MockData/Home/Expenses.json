@@ -1,0 +1,68 @@
+[
+	{
+		"Group": "Home",
+		"SubGroup": "Income",
+		"Budget": 5000,
+		"value": 5102.59
+	},
+	{
+		"Group": "Utilities",
+		"SubGroup": "Internet",
+		"Budget": 50,
+		"value": 50
+	},
+	{
+		"Group": "Utilities",
+		"SubGroup": "Trash",
+		"Budget": 25,
+		"value": 25
+	},
+	{
+		"Group": "Utilities",
+		"SubGroup": "Water",
+		"Budget": 50,
+		"value": 49.01
+	},
+	{
+		"Group": "Utilities",
+		"SubGroup": "Electricity",
+		"Budget": 50,
+		"value": 64.94
+	},
+	{
+		"Group": "Utilities",
+		"SubGroup": "Gas",
+		"Budget": 50,
+		"value": 19.2
+	},
+	{
+		"Group": "Home",
+		"SubGroup": "Rent",
+		"Budget": 1450,
+		"value": 1450
+	},
+	{
+		"Group": "Home",
+		"SubGroup": "Groceries",
+		"Budget": 200,
+		"value": 166.2
+	},
+	{
+		"Group": "Home",
+		"SubGroup": "Eat Out",
+		"Budget": 150,
+		"value": 19.2
+	},
+	{
+		"Group": "Home",
+		"SubGroup": "Insurance",
+		"Budget": 1000,
+		"value": 999.2
+	},
+	{
+		"Group": "Car",
+		"SubGroup": "Gas",
+		"Budget": 50,
+		"value": 19.2
+	}
+]

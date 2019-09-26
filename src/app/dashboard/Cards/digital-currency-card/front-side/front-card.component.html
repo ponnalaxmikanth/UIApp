@@ -1,0 +1,28 @@
+<nb-card-header>
+    <i class="fa fa-btc" [class.up]="_currentValue?.Current?.Profit > 0" [class.down]="_currentValue?.Current?.Profit < 0"></i>
+  <span class="title">Digital Currency (Current)</span>
+</nb-card-header>
+<nb-card-body>
+  <div class="row">
+    <div class="col-md-6">
+      <label>Investment</label>
+    </div>
+    <div class="col-md-6">
+      <label class="right">{{_currentValue?.Current?.Investment | currency}}</label>
+    </div>
+  </div>
+  <div class="row divider"></div>
+  <div class="row">
+    <div class="col-md-6">
+      <label>Profit</label>
+    </div>
+    <div class="col-md-6">
+      <div class="delta right" [class.up]="_currentValue?.Current?.Profit > 0"
+        [class.down]="_currentValue?.Current?.Profit < 0">
+        <nb-icon [icon]="(_currentValue?.Current?.Profit > 0) ? 'arrow-upward-outline' : 'arrow-downward-outline'"
+          pack="eva" class="direction"></nb-icon>
+        <label>{{_currentValue?.Current?.Profit | currency}}</label>
+      </div>
+    </div>
+  </div>
+</nb-card-body>

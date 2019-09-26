@@ -1,0 +1,29 @@
+<nb-card-header>
+  <!-- <i class="ion-social-usd"></i> -->
+  <span class="title">
+    <i class="fa fa-dollar" [class.up]="_stocksCurrentValue?.Current?.Profit > 0" [class.down]="_stocksCurrentValue?.Current?.Profit < 0"></i>
+    &nbsp;<a class="" routerlink="['/Stocks']" href="/#/Stocks">Stocks (Current)</a>
+  </span>
+</nb-card-header>
+<nb-card-body>
+  <div class="row">
+    <div class="col-md-6">
+      <label>Investment</label>
+    </div>
+    <div class="col-md-6">
+      <label class="right">{{_stocksCurrentValue?.Current?.Investment | currency}}</label>
+    </div>
+  </div>
+  <div class="row divider"></div>
+  <div class="row">
+    <div class="col-md-6">
+      <label>Profit</label>
+    </div>
+    <div class="col-md-6">
+      <div class="delta right" [class.up]="_stocksCurrentValue?.Current?.Profit > 0" [class.down]="_stocksCurrentValue?.Current?.Profit < 0">
+        <nb-icon [icon]="(_stocksCurrentValue?.Current?.Profit > 0) ? 'trending-up-outline' : 'trending-down-outline'" pack="eva" class="direction"></nb-icon>
+        <label>{{_stocksCurrentValue?.Current?.Profit | currency}}</label>
+      </div>
+    </div>
+  </div>
+</nb-card-body>

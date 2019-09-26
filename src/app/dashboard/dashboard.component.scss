@@ -1,0 +1,14 @@
+@import './../@theme/styles/themes.scss';
+        .nb-theme-corporate nb-card {
+            margin-bottom: 1rem;
+        }
+
+app-dashboard.nb-theme-corporate nb-card {
+            margin-bottom: 1rem;
+        }
+
+        
+
+          @include nb-install-component() {
+            
+        }     

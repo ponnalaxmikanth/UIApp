@@ -1,0 +1,27 @@
+<nb-card-header>
+        <i class="ion-social-usd"></i>
+        <span class="title">Credit Cards</span>
+      </nb-card-header>
+      <nb-card-body>
+        <div class="row">
+          <div class="col-md-6">
+            <label>Savings</label>
+          </div>
+          <div class="col-md-6">
+            <label class="right">{{data.Invest | currency}}</label>
+          </div>
+        </div>
+        <div class="row divider"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <label>Credit Cards</label>
+          </div>
+          <div class="col-md-6">
+            <div class="delta right" [class.up]="data.delta.up" [class.down]="!data.delta.up">
+                  <nb-icon [icon]="data.delta.up ? 'arrow-upward-outline' : 'arrow-downward-outline'" pack="eva" class="direction"></nb-icon>
+                <label>{{data.Profit | currency}}</label>
+              </div>
+          </div>
+        </div>
+      </nb-card-body>
+      

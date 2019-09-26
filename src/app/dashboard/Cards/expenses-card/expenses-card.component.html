@@ -1,0 +1,49 @@
+<div class="exepnses-container">
+  <nb-card size="large">
+    <nb-card-header class="header">
+      <!-- <i class="ion-social-usd"></i> -->
+      <div class="row">
+        <div class="title left col-xl-8">Expenses</div>
+        <div class="right col-xl-4">
+          <div class="value">
+              <div class="delta right first-value" [class.up]="overall?.Expenses < overall?.Budget " [class.down]="overall?.Budget > overall?.Expenses">
+                <nb-icon [icon]="(overall?.Expenses > overall?.Budget) ? 'diagonal-arrow-right-up' : (overall?.Expenses < overall?.Budget) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction"></nb-icon>
+                {{overall?.Expenses | currency}}
+              </div>
+              <div class="separator"> / </div>
+            <div class="second-value">{{overall?.Budget | currency}}</div>
+          </div>
+        </div>
+      </div>
+    </nb-card-header>
+    <nb-card-body class="body">
+      <nb-list>
+        <nb-list-item class="item" *ngFor="let item of currentExpenses;">
+          <div class="col-xl-3">{{ item.Group }}</div>
+          <div class="col-xl-3">{{ item.SubGroup }}</div>
+
+          <div class="col-xl-5">
+              <div class="value">
+                  <div class="delta right" *ngIf="item.SubGroup == 'Income'" [class.up]="item?.value > item?.Budget " [class.down]="item?.value < item?.Budget">
+                    <nb-icon [icon]="(item?.value > item?.Budget) ? 'diagonal-arrow-right-up' : (item?.value < item?.Budget) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction">
+                    </nb-icon>
+                    <label>{{ item.value | currency }}</label>
+                  </div>
+      
+                  <div class="delta right" *ngIf="item.SubGroup != 'Income'" [class.up]="item?.value < item?.Budget " [class.down]="item?.value > item?.Budget">
+                      <nb-icon [icon]="(item?.value > item?.Budget) ? 'diagonal-arrow-right-up' : (item?.value < item?.Budget) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction">
+                      </nb-icon>
+                      <label>{{ item.value | currency }}</label>
+                    </div>
+                    <div class="separator"> / </div>
+                    <div class="second-value">{{ item.Budget | currency }}</div>
+              </div>
+              
+          
+          </div>
+        </nb-list-item>
+      </nb-list>
+
+    </nb-card-body>
+  </nb-card>
+</div>

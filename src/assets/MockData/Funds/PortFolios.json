@@ -1,0 +1,18 @@
+[
+{
+		"PortfolioId": -1,
+		"Portfolio": "All"
+	},
+	{
+		"PortfolioId": 1,
+		"Portfolio": "Kanth"
+	},
+	{
+		"PortfolioId": 2,
+		"Portfolio": "Dad"
+	},
+	{
+		"PortfolioId": 3,
+		"Portfolio": "Vaagdevi"
+	}
+]

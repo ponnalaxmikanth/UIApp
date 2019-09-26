@@ -1,0 +1,30 @@
+@import '~@nebular/theme/styles/global/breakpoints';
+@import './@theme/styles/themes';
+
+
+// .size-tiny {
+//     height: 11.5 rem !important;
+//     background-color: green;
+// }
+
+
+@include nb-install-component() {
+    nb-layout {
+        nb-layout-header {
+            nav {
+                height: 3.75rem;
+            }
+        }
+        .layout-container {
+            height: 3.75rem;
+        }
+    }
+
+    .menu-sidebar ::ng-deep .scrollable {
+        padding-top: nb-theme(layout-padding-top);
+      }
+    
+    .scrollable-container {
+    
+    }
+}

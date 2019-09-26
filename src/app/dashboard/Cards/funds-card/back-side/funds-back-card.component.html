@@ -1,0 +1,28 @@
+<nb-card-header>
+    <i class="fa fa-rupee" [class.up]="_fundsCurrentValue?.Overall?.Profit > 0" [class.down]="_fundsCurrentValue?.Overall?.Profit < 0"></i>
+        <span class="title">Funds (All)</span>
+      </nb-card-header>
+      <nb-card-body>
+        <div class="row">
+          <div class="col-md-6">
+            <label>Investment</label>
+          </div>
+          <div class="col-md-6">
+            <label class="right fa fa-rupee">{{_fundsCurrentValue?.Overall?.Investment | number}}</label>
+          </div>
+        </div>
+        <div class="row divider"></div>
+        <div class="row">
+          <div class="col-md-6">
+            <label>Profit</label>
+          </div>
+          <div class="col-md-6">
+            <div class="delta right" [class.up]="_fundsCurrentValue?.Overall?.Profit > 0" [class.down]="_fundsCurrentValue?.Overall?.Profit < 0">
+              <nb-icon [icon]="(_fundsCurrentValue?.Overall?.Profit > 0) ? 'arrow-upward-outline' : 'arrow-downward-outline'" pack="eva" class="direction"></nb-icon>
+              <i class="fa fa-rupee"></i>
+            <label class="">{{_fundsCurrentValue?.Overall?.Profit | number}}</label>
+          </div>
+          </div>
+        </div>
+      </nb-card-body>
+      
