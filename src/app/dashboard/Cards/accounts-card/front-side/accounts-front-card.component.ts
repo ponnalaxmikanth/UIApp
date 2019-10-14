@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AccountsService } from '../../../../Services/accounts.service';
 
 @Component({
   selector: 'app-accounts-front-card',
@@ -8,13 +9,22 @@ import { Component, OnInit } from '@angular/core';
 export class AccountsFrontCardComponent implements OnInit {
 
   data: any;
-  constructor() { }
+  constructor(private _accountsService: AccountsService) { }
 
   ngOnInit() {
-    this.data = {
-      Savings: 1000.00,
-      CreditCards: 110.03
-    };
+    // this.data = {
+    //   Savings: 1000.00,
+    //   CreditCards: 110.03
+    // };
+
+    this._accountsService.getCurrentStatus().subscribe(val => {
+      console.log('AccountsFrontCardComponent -- getCurrentStatus', val);
+      this.data = val;
+    },
+      error => {
+        console.error('AccountsFrontCardComponent -- getCurrentStatus', error);
+      }
+    );
   }
 
 }

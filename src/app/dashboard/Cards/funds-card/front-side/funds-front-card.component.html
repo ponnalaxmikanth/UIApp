@@ -1,5 +1,5 @@
 <nb-card-header>
-    <i class="fa fa-rupee" [class.up]="_fundsCurrentValue?.Current?.Profit > 0" [class.down]="_fundsCurrentValue?.Current?.Profit < 0"></i>
+    <i class="fa fa-rupee" [class.up]="_fundsCurrentValue?.Current?.CurrentValue > fundsCurrentValue?.Current?.Investment" [class.down]="_fundsCurrentValue?.Current?.CurrentValue < fundsCurrentValue?.Current?.Investment"></i>
         <span class="title">Funds (Current)</span>
       </nb-card-header>
       <nb-card-body>
@@ -8,7 +8,8 @@
             <label>Investment</label>
           </div>
           <div class="col-md-6">
-            <label class="right fa fa-rupee">
+            <label class="right">
+              <i class="fa fa-rupee"></i>
               {{_fundsCurrentValue?.Current?.Investment | number}}
             </label>
           </div>
@@ -16,15 +17,15 @@
         <div class="row divider"></div>
         <div class="row">
           <div class="col-md-6">
-            <label>Profit</label>
+            <label>Current Value</label>
           </div>
           <div class="col-md-6">
-            <div class="delta right" [class.up]="_fundsCurrentValue?.Current?.Profit > 0" [class.down]="_fundsCurrentValue?.Current?.Profit < 0">
-              <nb-icon [icon]="(_fundsCurrentValue?.Current?.Profit > 0) ? 'arrow-upward-outline' : 'arrow-downward-outline'" pack="eva" class="direction"></nb-icon>
+            <div class="delta right" [class.up]="_fundsCurrentValue?.Current?.CurrentValue > fundsCurrentValue?.Current?.Investment" [class.down]="_fundsCurrentValue?.Current?.CurrentValue < fundsCurrentValue?.Current?.Investment">
+              <nb-icon [icon]="(_fundsCurrentValue?.Current?.CurrentValue > fundsCurrentValue?.Current?.Investment) ? 'arrow-upward-outline' : 'arrow-downward-outline'" pack="eva" class="direction"></nb-icon>
               
               <label class="">
                   <i class="fa fa-rupee"></i>
-                {{_fundsCurrentValue?.Current?.Profit | number}}
+                {{_fundsCurrentValue?.Current?.CurrentValue | number}}
               </label>
           </div>
           </div>

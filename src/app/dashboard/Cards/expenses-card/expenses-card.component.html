@@ -6,37 +6,38 @@
         <div class="title left col-xl-8">Expenses</div>
         <div class="right col-xl-4">
           <div class="value">
-              <div class="delta right first-value" [class.up]="overall?.Expenses < overall?.Budget " [class.down]="overall?.Budget > overall?.Expenses">
-                <nb-icon [icon]="(overall?.Expenses > overall?.Budget) ? 'diagonal-arrow-right-up' : (overall?.Expenses < overall?.Budget) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction"></nb-icon>
-                {{overall?.Expenses | currency}}
+              <div class="delta right first-value" [class.up]="(this.currentExpenses?.Summary?.Debit - this.currentExpenses?.Summary?.Credit) < this.currentExpenses?.Summary?.BudgetAmount " [class.down]="this.currentExpenses?.Summary?.BudgetAmount > (this.currentExpenses?.Summary?.Debit - this.currentExpenses?.Summary?.Credit)">
+                <nb-icon [icon]="((this.currentExpenses?.Summary?.Debit - this.currentExpenses?.Summary?.Credit) > this.currentExpenses?.Summary?.BudgetAmount) ? 'diagonal-arrow-right-up' : ((this.currentExpenses?.Summary?.Debit - this.currentExpenses?.Summary?.Credit) < this.currentExpenses?.Summary?.BudgetAmount) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction"></nb-icon>
+                {{(this.currentExpenses?.Summary?.Debit - this.currentExpenses?.Summary?.Credit) | currency}}
               </div>
               <div class="separator"> / </div>
-            <div class="second-value">{{overall?.Budget | currency}}</div>
+            <div class="second-value">{{this.currentExpenses?.Summary?.BudgetAmount | currency}}</div>
           </div>
         </div>
       </div>
     </nb-card-header>
     <nb-card-body class="body">
+      <div class="bar"></div>
       <nb-list>
-        <nb-list-item class="item" *ngFor="let item of currentExpenses;">
+        <nb-list-item class="item" *ngFor="let item of currentExpenses?.Expenses;">
           <div class="col-xl-3">{{ item.Group }}</div>
           <div class="col-xl-3">{{ item.SubGroup }}</div>
 
           <div class="col-xl-5">
               <div class="value">
-                  <div class="delta right" *ngIf="item.SubGroup == 'Income'" [class.up]="item?.value > item?.Budget " [class.down]="item?.value < item?.Budget">
-                    <nb-icon [icon]="(item?.value > item?.Budget) ? 'diagonal-arrow-right-up' : (item?.value < item?.Budget) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction">
+                  <div class="delta right" *ngIf="item.SubGroup == 'Income'" [class.up]="(item?.Credit - item?.Debit) > item?.BudgetAmount " [class.down]="(item?.Debit - item?.Credit) < item?.BudgetAmount">
+                    <nb-icon [icon]="((item?.Credit - item?.Debit) > item?.BudgetAmount) ? 'diagonal-arrow-right-up' : ((item?.Credit - item?.Debit) < item?.BudgetAmount) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction">
                     </nb-icon>
-                    <label>{{ item.value | currency }}</label>
+                    <label>{{ item?.Credit - item?.Debit | currency }}</label>
                   </div>
       
-                  <div class="delta right" *ngIf="item.SubGroup != 'Income'" [class.up]="item?.value < item?.Budget " [class.down]="item?.value > item?.Budget">
-                      <nb-icon [icon]="(item?.value > item?.Budget) ? 'diagonal-arrow-right-up' : (item?.value < item?.Budget) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction">
+                  <div class="delta right" *ngIf="item.SubGroup != 'Income'" [class.up]="(item?.Debit - item?.Credit) < item?.BudgetAmount " [class.down]="(item?.Debit - item?.Credit) > item?.BudgetAmount">
+                      <nb-icon [icon]="((item?.Debit - item?.Credit) > item?.BudgetAmount) ? 'diagonal-arrow-right-up' : ((item?.Debit - item?.Credit) < item?.BudgetAmount) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction">
                       </nb-icon>
-                      <label>{{ item.value | currency }}</label>
+                      <label>{{ item?.Debit - item?.Credit | currency }}</label>
                     </div>
                     <div class="separator"> / </div>
-                    <div class="second-value">{{ item.Budget | currency }}</div>
+                    <div class="second-value">{{ item.BudgetAmount | currency }}</div>
               </div>
               
           

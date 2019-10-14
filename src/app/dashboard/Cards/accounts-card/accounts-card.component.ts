@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-accounts-card',
   templateUrl: './accounts-card.component.html',
@@ -13,11 +12,7 @@ export class AccountsCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.data = {
-      Invest: 1000.00,
-      Profit: 110.03,
-      delta: { up: true },
-    };
+    
   }
 
   toggleView() {

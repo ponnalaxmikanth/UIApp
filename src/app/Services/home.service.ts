@@ -9,17 +9,27 @@ const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/js
 @Injectable({ providedIn: 'root' })
 export class HomeService {
   private baseUrl: string;
+  public totalExpenses = 0;
+  public totalBudget = 0;
 
-  constructor(private httpClient: HttpClient) { 
+  constructor(private httpClient: HttpClient) {
     this.baseUrl = environment.apiUrl + 'api/';
   }
 
-  getExpenses(): Observable<any> {
-    if(environment.useMockData) {
+  getExpenses(fromDate: Date, toDate: Date): Observable<any> {
+    if (environment.useMockData) {
       return this.httpClient.get('assets/MockData/Home/Expenses.json');
+    } else {
+      const request = { FromDate: fromDate, ToDate: toDate };
+      return this.httpClient.post(this.baseUrl + 'Expenses/GetBudget', request, httpOptions);
     }
-    else {
-      return this.httpClient.get(this.baseUrl + 'MutualFunds/getCurrentValue', httpOptions);
+  }
+
+  getExpensesChartData(): Observable<any> {
+    if (environment.useMockData) {
+      return this.httpClient.get('assets/MockData/Home/Expenses.json');
+    } else {
+      return this.httpClient.get(this.baseUrl + 'Expenses/GetExpensesChartData');
     }
   }
 

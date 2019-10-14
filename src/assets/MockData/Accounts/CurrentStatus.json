@@ -1,0 +1,18 @@
+{
+    "Savings": {
+        "AccountId": 0,
+        "AccountType": "Savings",
+        "Debit": 944.3700,
+        "Credit": 5.1000,
+        "Total": 7210.5600,
+        "DisplayName": null
+    },
+    "Credit": {
+        "AccountId": 0,
+        "AccountType": "Credit",
+        "Debit": 39.7400,
+        "Credit": 3566.0300,
+        "Total": -9972.4700,
+        "DisplayName": null
+    }
+}

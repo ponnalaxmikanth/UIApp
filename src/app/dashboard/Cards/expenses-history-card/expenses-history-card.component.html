@@ -3,6 +3,17 @@
         <nb-card-header class="header">
             <div class="row">
                 <div class="title left col-xl-8">Expenses (YTD)</div>
+                <div class="right col-xl-4">
+                    <div class="value">
+                        <div class="delta right first-value" [class.up]="(this.homeService.totalBudget) > this.homeService.totalExpenses" 
+                                        [class.down]="this.homeService.totalExpenses > this.homeService.totalBudget">
+                          <nb-icon [icon]="this.homeService.totalBudget > this.homeService.totalExpenses ? 'diagonal-arrow-right-up' : (this.homeService.totalBudget < this.homeService.totalExpenses) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction"></nb-icon>
+                          {{(this.homeService.totalExpenses) | currency}}
+                        </div>
+                        <div class="separator"> / </div>
+                      <div class="second-value">{{this.homeService.totalBudget | currency}}</div>
+                    </div>
+                  </div>
             </div>
         </nb-card-header>
         <nb-card-body class="body">

@@ -1,68 +1,132 @@
-[
-	{
-		"Group": "Home",
-		"SubGroup": "Income",
-		"Budget": 5000,
-		"value": 5102.59
-	},
-	{
-		"Group": "Utilities",
-		"SubGroup": "Internet",
-		"Budget": 50,
-		"value": 50
-	},
-	{
-		"Group": "Utilities",
-		"SubGroup": "Trash",
-		"Budget": 25,
-		"value": 25
-	},
-	{
-		"Group": "Utilities",
-		"SubGroup": "Water",
-		"Budget": 50,
-		"value": 49.01
-	},
-	{
-		"Group": "Utilities",
-		"SubGroup": "Electricity",
-		"Budget": 50,
-		"value": 64.94
-	},
-	{
-		"Group": "Utilities",
-		"SubGroup": "Gas",
-		"Budget": 50,
-		"value": 19.2
-	},
-	{
-		"Group": "Home",
-		"SubGroup": "Rent",
-		"Budget": 1450,
-		"value": 1450
-	},
-	{
-		"Group": "Home",
-		"SubGroup": "Groceries",
-		"Budget": 200,
-		"value": 166.2
-	},
-	{
-		"Group": "Home",
-		"SubGroup": "Eat Out",
-		"Budget": 150,
-		"value": 19.2
-	},
-	{
-		"Group": "Home",
-		"SubGroup": "Insurance",
-		"Budget": 1000,
-		"value": 999.2
-	},
-	{
-		"Group": "Car",
-		"SubGroup": "Gas",
-		"Budget": 50,
-		"value": 19.2
-	}
-]
+{
+	"Expenses": [
+		{
+			"Group": "Home",
+			"SubGroup": "Car",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 400.0,
+			"BudgetAmount": 400.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Coffee",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 25.0,
+			"BudgetAmount": 25.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Eat Out",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 120.0,
+			"BudgetAmount": 120.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Electricity",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 70.0,
+			"BudgetAmount": 70.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Gas",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 50.0,
+			"BudgetAmount": 50.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Grocery",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 400.0,
+			"BudgetAmount": 400.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Insurance",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 1000.0,
+			"BudgetAmount": 1000.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Internet",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 40.0,
+			"BudgetAmount": 40.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Mobile Bill",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 67.0,
+			"BudgetAmount": 67.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Rent",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 1181.0,
+			"BudgetAmount": 1181.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Transport",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 170.0,
+			"BudgetAmount": 170.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Trash",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 25.0,
+			"BudgetAmount": 25.0,
+			"Level": 0
+		},
+		{
+			"Group": "Home",
+			"SubGroup": "Water",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 50.0,
+			"BudgetAmount": 50.0,
+			"Level": 0
+		}
+	],
+	"Summary": 
+		{
+			"Group": "Total",
+			"SubGroup": "Total",
+			"Debit": 0.0,
+			"Credit": 0.0,
+			"Balance": 3598.0,
+			"BudgetAmount": 3598.0,
+			"Level": 1
+		}
+	
+}

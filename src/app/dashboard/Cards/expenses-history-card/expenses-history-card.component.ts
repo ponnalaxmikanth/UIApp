@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from '../../../Services/home.service';
 
 @Component({
   selector: 'app-expenses-history-card',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpensesHistoryCardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public  homeService: HomeService) { }
 
   ngOnInit() {
   }

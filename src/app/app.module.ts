@@ -23,6 +23,7 @@ import { DigitalCurrencyService } from './Services/digital-currency.service';
 import { FundsService } from './Services/funds.service';
 import { HomeService } from './Services/home.service';
 import { StocksService } from './Services/stocks.service';
+import { AccountsService } from './Services/accounts.service';
 
 @NgModule({
   declarations: [
@@ -42,12 +43,12 @@ import { StocksService } from './Services/stocks.service';
     , NbLayoutModule
     , NbButtonModule
     , NbSidebarModule.forRoot()
-    , NbActionsModule 
+    , NbActionsModule
     , NbIconModule
     , HttpClientModule
     , DashboardModule
   ],
-  providers: [DigitalCurrencyService, FundsService, HomeService, StocksService],
+  providers: [DigitalCurrencyService, FundsService, HomeService, StocksService, AccountsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

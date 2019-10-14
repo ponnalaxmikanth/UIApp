@@ -10,6 +10,8 @@ export class FundsBackCardComponent implements OnInit {
   @Input() fundsCurrentValue: any;
 
   public _fundsCurrentValue: any;
+  public Investment: any;
+  public Profit: any;
   
   constructor() { }
 
@@ -18,7 +20,12 @@ export class FundsBackCardComponent implements OnInit {
 
   ngOnChanges(changes: SimpleChanges) {
     try {
-      this._fundsCurrentValue = changes.fundsCurrentValue.currentValue;
+      const val = changes.fundsCurrentValue.currentValue;
+      if(val != null) {
+        this.Investment = val.Current.Investment + val.Redeemed.Investment;
+        this.Profit = (val.Current.CurrentValue + val.Redeemed.CurrentValue);
+        this.Profit = this.Profit - (val.Current.Investment + val.Redeemed.Investment);
+      }
       //console.log('FundsBackCardComponent -- ngOnChanges', this._fundsCurrentValue);
     }
     catch (ex) { console.error('FundsBackCardComponent -- ngOnChanges', ex); }

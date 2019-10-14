@@ -1,6 +1,30 @@
 @import '../../../@theme/styles/themes.scss';
 
 @include nb-install-component() {
+  .header {
+    .value {
+      display: flex;
+      float: right;
+      .separator {
+        padding: 0rem 0.5rem;
+      }
+    }
+
+    .delta {
+      display: flex;
+      align-items: center;
+  
+      &.down {
+        color: nb-theme(color-danger-default);
+      }
+  
+      &.up {
+        color: nb-theme(color-success-default);
+      }
+    }
+  }
+
+  
   .expenses-history-container {
       .body {
           padding: 0;

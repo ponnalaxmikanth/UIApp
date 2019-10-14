@@ -36,21 +36,20 @@ export class FundsService {
   }
 
   getPortFolios(): Observable<any> {
-    if(environment.useMockData) {
+    if (environment.useMockData) {
       return this.httpClient.get('assets/MockData/Funds/PortFolios.json');
-    }
-    else {
+    } else {
       return this.httpClient.get(this.baseUrl + 'api/MutualFunds/GetPortfolios', httpOptions);
     }
   }
 
   getCurrentValue(): Observable<any> {
-    if(environment.useMockData) {
+    if (environment.useMockData) {
       return this.httpClient.get('assets/MockData/Funds/CurrentValue.json');
+    } else {
+      return this.httpClient.get(this.baseUrl + 'api/Funds/GetFundsInvestmentDetails');
     }
-    else {
-      return this.httpClient.get(this.baseUrl + 'api/MutualFunds/getCurrentValue', httpOptions);
-    }
+    //return this.httpClient.get('http://localhost:11276/api/Funds/GetFundsInvestmentDetails');
   }
-  
+
 }
