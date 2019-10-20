@@ -3,12 +3,12 @@
     <nb-card-header class="header">
       <!-- <i class="ion-social-usd"></i> -->
       <div class="row">
-        <div class="title left col-xl-8">Expenses</div>
-        <div class="right col-xl-4">
+        <div class="title left col-xl-3">Expenses</div>
+        <div class="right col-xl-9">
           <div class="value">
-              <div class="delta right first-value" [class.up]="(this.currentExpenses?.Summary?.Debit - this.currentExpenses?.Summary?.Credit) < this.currentExpenses?.Summary?.BudgetAmount " [class.down]="this.currentExpenses?.Summary?.BudgetAmount > (this.currentExpenses?.Summary?.Debit - this.currentExpenses?.Summary?.Credit)">
-                <nb-icon [icon]="((this.currentExpenses?.Summary?.Debit - this.currentExpenses?.Summary?.Credit) > this.currentExpenses?.Summary?.BudgetAmount) ? 'diagonal-arrow-right-up' : ((this.currentExpenses?.Summary?.Debit - this.currentExpenses?.Summary?.Credit) < this.currentExpenses?.Summary?.BudgetAmount) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction"></nb-icon>
-                {{(this.currentExpenses?.Summary?.Debit - this.currentExpenses?.Summary?.Credit) | currency}}
+              <div class="delta right first-value" [class.up]="this.currentExpenses?.Summary?.Debit < this.currentExpenses?.Summary?.BudgetAmount " [class.down]="this.currentExpenses?.Summary?.Debit > this.currentExpenses?.Summary?.BudgetAmount">
+                <nb-icon [icon]="(this.currentExpenses?.Summary?.Debit > this.currentExpenses?.Summary?.BudgetAmount) ? 'diagonal-arrow-right-up' : (this.currentExpenses?.Summary?.Debit < this.currentExpenses?.Summary?.BudgetAmount) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction"></nb-icon>
+                {{(this.currentExpenses?.Summary?.Debit) | currency}} ({{(this.currentExpenses?.Summary?.Balance) | currency}})
               </div>
               <div class="separator"> / </div>
             <div class="second-value">{{this.currentExpenses?.Summary?.BudgetAmount | currency}}</div>

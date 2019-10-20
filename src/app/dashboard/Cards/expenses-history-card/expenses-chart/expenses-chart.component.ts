@@ -25,7 +25,53 @@ export class ExpensesChartComponent implements OnInit {
       this.chartData = val;
       this.FormatChartData();
       console.log('ExpensesChartComponent -- get Current expenses', val);
-      this.creteLayeredColumnChart();
+      //this.creteLayeredColumnChart();
+      //this.createCylinderChart();
+      //this.CreateBarChart();
+
+      let chart = am4core.create("chartdiv", am4charts.XYChart);
+      chart.data = this.chartData;
+      // Create axes
+      let categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+      categoryAxis.dataFields.category = "Period";
+      categoryAxis.numberFormatter.numberFormat = "#";
+      categoryAxis.renderer.inversed = true;
+      categoryAxis.renderer.grid.template.location = 0;
+      categoryAxis.renderer.cellStartLocation = 0.1;
+      categoryAxis.renderer.cellEndLocation = 0.9;
+
+      let  valueAxis = chart.xAxes.push(new am4charts.ValueAxis()); 
+      valueAxis.renderer.opposite = true;
+
+      // Create series
+      function createSeries(field, name) {
+        let series = chart.series.push(new am4charts.ColumnSeries());
+        series.dataFields.valueX = field;
+        series.dataFields.categoryY = "Period";
+        series.name = name;
+        series.columns.template.tooltipText = "{name}: [bold]{valueX}[/]";
+        series.columns.template.height = am4core.percent(100);
+        series.sequencedInterpolation = true;
+
+        let valueLabel = series.bullets.push(new am4charts.LabelBullet());
+        valueLabel.label.text = "{valueX}";
+        valueLabel.label.horizontalCenter = "left";
+        valueLabel.label.dx = 10;
+        valueLabel.label.hideOversized = false;
+        valueLabel.label.truncate = false;
+
+        let categoryLabel = series.bullets.push(new am4charts.LabelBullet());
+        categoryLabel.label.text = "{name}";
+        categoryLabel.label.horizontalCenter = "right";
+        categoryLabel.label.dx = -10;
+        categoryLabel.label.fill = am4core.color("#fff");
+        categoryLabel.label.hideOversized = false;
+        categoryLabel.label.truncate = false;
+      }
+
+      createSeries("Budget", "Budget");
+      createSeries("Expense", "Expense");
+      createSeries("Credit", "Credit");
     },
       error => {
         console.error('ExpensesChartComponent -- get Current expenses', error);
@@ -36,18 +82,18 @@ export class ExpensesChartComponent implements OnInit {
   FormatChartData() {
     try {
       var month = new Array();
-      month[0] = "Jan";
-      month[1] = "Feb";
-      month[2] = "Mar";
-      month[3] = "Apr";
-      month[4] = "May";
-      month[5] = "Jun";
-      month[6] = "Jul";
-      month[7] = "Aug";
-      month[8] = "Sep";
-      month[9] = "Oct";
-      month[10] = "Nov";
-      month[11] = "Dec";
+      month[0] = 'Jan';
+      month[1] = 'Feb';
+      month[2] = 'Mar';
+      month[3] = 'Apr';
+      month[4] = 'May';
+      month[5] = 'Jun';
+      month[6] = 'Jul';
+      month[7] = 'Aug';
+      month[8] = 'Sep';
+      month[9] = 'Oct';
+      month[10] = 'Nov';
+      month[11] = 'Dec';
       if (this.chartData != null && this.chartData.length > 0) {
         for ( let i = 0 ; i < this.chartData.length ; i++ ) {
           var date = new Date(this.chartData[i].FromDate);
@@ -61,6 +107,56 @@ export class ExpensesChartComponent implements OnInit {
     } catch (ex) {
       console.error('ExpensesChartComponent -- FormatChartData', ex);
     }
+  }
+
+  CreateBarChart() {
+    try {
+      console.log('ExpensesChartComponent -- CreateBarChart', this.chartData);
+      let chart = am4core.create('chartdiv', am4charts.XYChart);
+      chart.data = this.chartData;
+
+      // Create axes
+      let categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+      categoryAxis.dataFields.category = 'Period';
+      categoryAxis.numberFormatter.numberFormat = '#';
+      // categoryAxis.renderer.inversed = true;
+      // categoryAxis.renderer.grid.template.location = 0;
+      // categoryAxis.renderer.cellStartLocation = 0.1;
+      // categoryAxis.renderer.cellEndLocation = 0.9;
+
+      let  valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
+
+      this.createBarSeries(chart, 'Expense', 'Expense');
+      this.createBarSeries(chart, 'Budget', 'Budget');
+    }
+    catch (ex) {
+      console.error('ExpensesChartComponent -- CreateBarChart', ex);
+    }
+  }
+
+  createBarSeries(chart, field, name) {
+    let series = chart.series.push(new am4charts.ColumnSeries());
+    series.dataFields.valueX = field;
+    series.dataFields.categoryY = 'period';
+    series.name = name;
+    series.columns.template.tooltipText = '{name}: [bold]{valueX}[/]';
+    series.columns.template.height = am4core.percent(100);
+    series.sequencedInterpolation = true;
+  
+    let valueLabel = series.bullets.push(new am4charts.LabelBullet());
+    valueLabel.label.text = '{valueX}';
+    valueLabel.label.horizontalCenter = 'left';
+    valueLabel.label.dx = 10;
+    valueLabel.label.hideOversized = false;
+    valueLabel.label.truncate = false;
+  
+    let categoryLabel = series.bullets.push(new am4charts.LabelBullet());
+    categoryLabel.label.text = '{name}';
+    categoryLabel.label.horizontalCenter = 'right';
+    categoryLabel.label.dx = -10;
+    categoryLabel.label.fill = am4core.color('#fff');
+    categoryLabel.label.hideOversized = false;
+    categoryLabel.label.truncate = false;
   }
 
   creteLayeredColumnChart() {
