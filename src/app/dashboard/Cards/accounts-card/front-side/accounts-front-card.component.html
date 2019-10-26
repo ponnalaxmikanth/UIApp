@@ -17,7 +17,7 @@
             <label>Credit Cards</label>
           </div>
           <div class="col-md-6">
-            <div class="delta right" [class.up]="(data?.Savings?.Total > data?.Savings?.Total )" [class.down]="!(data?.Savings?.Total > data?.Savings?.Total )">
+            <div class="delta right" [class.up]="(data?.Savings?.Total > data?.Credit?.Total )" [class.down]="!(data?.Credit?.Total > data?.Savings?.Total )">
                 <nb-icon [icon]="(data?.Savings?.Total > data?.Savings?.Total ) ? 'arrow-upward-outline' : 'arrow-downward-outline'" pack="eva" class="direction"></nb-icon>
             <label>{{data?.Credit?.Total | currency}}</label>
           </div>
