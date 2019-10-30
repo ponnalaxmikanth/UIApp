@@ -11,15 +11,14 @@ const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/js
 export class StocksService {
   private baseUrl: string;
 
-  constructor(private httpClient: HttpClient) { 
+  constructor(private httpClient: HttpClient) {
     this.baseUrl = environment.apiUrl;
   }
 
   getCurrentValue(): Observable<any> {
-    if(environment.useMockData) {
+    if (!environment.useMockData) {
       return this.httpClient.get('assets/MockData/DigitalCurrency/CurrentValue.json');
-    }
-    else {
+    } else {
       return this.httpClient.get(this.baseUrl + 'api/MutualFunds/getCurrentValue', httpOptions);
     }
   }

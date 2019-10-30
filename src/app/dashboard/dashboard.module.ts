@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { NbCardModule, NbIconModule } from '@nebular/theme';
 import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbButtonModule, NbActionsModule, NbListModule } from '@nebular/theme';
+import { FormsModule } from '@angular/forms';
+// import { UiSwitchModule } from 'ngx-toggle-switch';
+import { UiSwitchModule } from 'ngx-ui-switch';
 
 // import { DigitalCurrencyService } from '../Services/digital-currency.service';
 // import { FundsService } from '../Services/funds.service';
@@ -27,16 +30,18 @@ import { ExpensesCardComponent } from './Cards/expenses-card/expenses-card.compo
 import { ExpensesHistoryCardComponent } from './Cards/expenses-history-card/expenses-history-card.component';
 import { ExpensesChartComponent } from './Cards/expenses-history-card/expenses-chart/expenses-chart.component';
 
-
 @NgModule({
   declarations: [DashboardComponent, StocksCardComponent, StocksFrontCardComponent, StocksBackCardComponent, DigitalCurrencyCardComponent, FrontCardComponent, BackCardComponent, FundsCardComponent, AccountsCardComponent, FundsFrontCardComponent, AccountsFrontCardComponent, AccountsBackCardComponent, FundsBackCardComponent, ExpensesCardComponent, ExpensesHistoryCardComponent, ExpensesChartComponent],
   imports: [
     CommonModule
     , NbCardModule
     , NbThemeModule, NbSidebarModule, NbLayoutModule, NbButtonModule, NbActionsModule, NbIconModule, NbListModule
+    , FormsModule
+    , UiSwitchModule
     //DashboardRoutingModule
   ],
   //providers: [DigitalCurrencyService, FundsService, HomeService, StocksService],
   bootstrap: [DashboardComponent]
 })
+
 export class DashboardModule { }

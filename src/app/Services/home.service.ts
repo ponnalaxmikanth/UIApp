@@ -11,6 +11,7 @@ export class HomeService {
   private baseUrl: string;
   public totalExpenses = 0;
   public totalBudget = 0;
+  public totalIncome = 0;
 
   constructor(private httpClient: HttpClient) {
     this.baseUrl = environment.apiUrl + 'api/';

@@ -60,6 +60,7 @@ export class ExpensesChartComponent implements OnInit {
           //console.log('ExpensesChartComponent -- FormatChartData', this.chartData[i], month[date.getMonth()], '/', date.getFullYear());
           this._homeService.totalExpenses = this._homeService.totalExpenses + this.chartData[i].Expense;
           this._homeService.totalBudget = this._homeService.totalBudget + this.chartData[i].Budget;
+          this._homeService.totalIncome = this._homeService.totalIncome + this.chartData[i].Credit;
           // this.chartData[i].Period = month[date.getMonth()] +  ' / ' + date.getFullYear();
           this.chartData[i].Period = (date.getMonth() + 1) +  '/' + date.getFullYear().toString().substr(-2);
         }

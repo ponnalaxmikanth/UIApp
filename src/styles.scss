@@ -7,12 +7,3 @@
   @include nb-theme-global();
 };
 /* You can add global styles to this file, and also import other style files */
-
-
-.fa.fa-dollar.up, .fa.fa-btc.up, .fa.fa-rupee.up {
-  color: #00d68f;
-}
-
-.fa.fa-dollar.down, .fa.fa-btc.down, .fa.fa-rupee.down {
-  color: #ff3d71;
-}
