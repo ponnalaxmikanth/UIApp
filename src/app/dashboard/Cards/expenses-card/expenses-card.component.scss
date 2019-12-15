@@ -45,24 +45,33 @@
     
 
     .exepnses-container {
-
       .header {
+        // padding: 0.5rem;
+        .row {
+          margin: 0rem;
+        }
         .title {
           color: red;
+          // margin: 0rem .5rem;
+          .switch.checked { color: white; }
         }
-        .value {
-          display: flex;
-          float: right;
-          .separator {
-            padding: 0rem 0.5rem;
+        .right {
+          padding: 0rem 0.5rem;
+          .value {
+            display: flex;
+            float: right;
+            .separator {
+              padding: 0rem 0.5rem;
+            }
           }
         }
       }
       
 
       .body {
+        padding: 0.5rem;
         nb-list-item {
-          padding: 0.5rem 0rem;
+          padding: 0.2rem 0rem;
       }
       .value {
         display: flex;

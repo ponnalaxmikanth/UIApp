@@ -12,13 +12,15 @@ const routes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'Expenses', component: ExpensesComponent },
-  { path: 'Funds', component: FundsComponent },
+  { path: 'funds', component: FundsComponent },
   { path: 'Stocks', component: StocksComponent },
 ];
 
 @NgModule({
   //imports: [RouterModule.forRoot(routes, { enableTracing: true, useHash: true })],
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes,
+     { enableTracing: true }
+    )],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

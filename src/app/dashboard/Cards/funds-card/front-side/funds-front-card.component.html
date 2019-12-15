@@ -1,6 +1,6 @@
 <nb-card-header>
     <i class="fa fa-rupee" [class.up]="_fundsCurrentValue?.Current?.CurrentValue > fundsCurrentValue?.Current?.Investment" [class.down]="_fundsCurrentValue?.Current?.CurrentValue < fundsCurrentValue?.Current?.Investment"></i>
-        <span class="title">Funds (Current)</span>
+        <a class="title" routerLink="/funds" routerLinkActive="active">Funds (Current)</a>
       </nb-card-header>
       <nb-card-body>
         <div class="row">

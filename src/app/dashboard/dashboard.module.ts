@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { NbCardModule, NbIconModule } from '@nebular/theme';
 import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbButtonModule, NbActionsModule, NbListModule } from '@nebular/theme';
@@ -38,6 +39,7 @@ import { ExpensesChartComponent } from './Cards/expenses-history-card/expenses-c
     , NbThemeModule, NbSidebarModule, NbLayoutModule, NbButtonModule, NbActionsModule, NbIconModule, NbListModule
     , FormsModule
     , UiSwitchModule
+    , RouterModule
     //DashboardRoutingModule
   ],
   //providers: [DigitalCurrencyService, FundsService, HomeService, StocksService],

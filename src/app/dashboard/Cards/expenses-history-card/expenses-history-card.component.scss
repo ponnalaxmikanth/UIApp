@@ -2,11 +2,22 @@
 
 @include nb-install-component() {
   .header {
+    padding: .5rem 1.25rem;
+    .title {
+      color: red;
+      .switch.checked { color: white !important; }
+    }
     .value {
       display: flex;
       float: right;
       .separator {
-        padding: 0rem 0.5rem;
+        margin: 0rem 0.5rem;
+        border-left: 1px solid gray;
+      }
+      .label {
+        font-size: x-small;
+        display: flex;
+        justify-content: center;
       }
     }
 

@@ -16,7 +16,7 @@ export class FundsCardComponent implements OnInit {
 
   ngOnInit() {
     this._fundsService.getCurrentValue().subscribe(val => {
-      console.log('FundsCardComponent -- get Funds Current Value', val);
+      // console.log('FundsCardComponent -- get Funds Current Value', val);
       this.fundsCurrentValue = val;
     },
       error => {

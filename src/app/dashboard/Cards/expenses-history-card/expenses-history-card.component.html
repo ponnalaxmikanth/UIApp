@@ -8,15 +8,26 @@
                 </div>
                 <div class="right col-xl-6">
                     <div class="value">
-                        <div class="delta right first-value" [class.up]="(this.homeService.totalBudget) > this.homeService.totalExpenses" 
-                                        [class.down]="this.homeService.totalExpenses > this.homeService.totalBudget">
-                          <nb-icon [icon]="this.homeService.totalBudget > this.homeService.totalExpenses ? 'diagonal-arrow-right-up' : (this.homeService.totalBudget < this.homeService.totalExpenses) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction"></nb-icon>
-                          {{(this.homeService.totalExpenses) | currency}}
+                        <div class="">
+                            <span class="label">Expenses</span>
+                            <div class="delta right first-value" [class.up]="(this.homeService.totalBudget) > this.homeService.totalExpenses" 
+                                            [class.down]="this.homeService.totalExpenses > this.homeService.totalBudget">
+                                <nb-icon [icon]="this.homeService.totalBudget > this.homeService.totalExpenses ? 'diagonal-arrow-right-up' : (this.homeService.totalBudget < this.homeService.totalExpenses) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction"></nb-icon>
+                                {{(this.homeService.totalExpenses) | currency}}
+                            </div>
                         </div>
-                        <div class="separator"> | </div>
-                        <div class="second-value">{{this.homeService.totalBudget | currency}}</div>
-                        <div class="separator"> | </div>
-                        <div class="second-value">{{this.homeService.totalIncome | currency}}</div>
+                        
+                        <div class="separator"></div>
+                        <div class="">
+                            <span class="label">Budget</span>
+                            <div class="second-value">{{this.homeService.totalBudget | currency}}</div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="">
+                            <span class="label">Income</span>
+                            <div class="second-value">{{this.homeService.totalIncome | currency}}</div>
+                        </div>
+                        
                     </div>
                   </div>
             </div>
@@ -41,7 +52,7 @@
                 </div>
             </div> -->
             <div class="chart-container row">
-                <app-expenses-chart></app-expenses-chart>
+                <app-expenses-chart [type]="graphperiod"></app-expenses-chart>
             </div>
         </nb-card-body>
     </nb-card>

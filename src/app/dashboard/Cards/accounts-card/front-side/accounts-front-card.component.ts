@@ -18,8 +18,8 @@ export class AccountsFrontCardComponent implements OnInit {
     // };
 
     this._accountsService.getCurrentStatus().subscribe(val => {
-      console.log('AccountsFrontCardComponent -- getCurrentStatus', val);
       this.data = val;
+      // console.log('AccountsFrontCardComponent -- getCurrentStatus', val, this.data);
     },
       error => {
         console.error('AccountsFrontCardComponent -- getCurrentStatus', error);

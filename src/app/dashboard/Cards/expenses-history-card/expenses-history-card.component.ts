@@ -6,8 +6,10 @@ import { HomeService } from '../../../Services/home.service';
   templateUrl: './expenses-history-card.component.html',
   styleUrls: ['./expenses-history-card.component.scss']
 })
+
 export class ExpensesHistoryCardComponent implements OnInit {
   public graphperiod = true;
+  
   constructor(public  homeService: HomeService) {
 
   }

@@ -12,14 +12,14 @@ export class FundsService {
 
   private baseUrl: string;
   public portfolios: any;
-  //public currentValue: any;
+  // public currentValue: any;
 
-  constructor(private httpClient: HttpClient) { 
+  constructor(private httpClient: HttpClient) {
     this.baseUrl = environment.apiUrl;
 
     this.getPortFolios().subscribe(val => {
       this.portfolios = val;
-      //console.log('FundsService -- getPortFolios', this.portfolios);
+      // console.log('FundsService -- getPortFolios', this.portfolios);
     },
     error => {
       console.error('FundsService -- getPortFolios', error);
@@ -49,7 +49,15 @@ export class FundsService {
     } else {
       return this.httpClient.get(this.baseUrl + 'api/Funds/GetFundsInvestmentDetails');
     }
-    //return this.httpClient.get('http://localhost:11276/api/Funds/GetFundsInvestmentDetails');
+    // return this.httpClient.get('http://localhost:11276/api/Funds/GetFundsInvestmentDetails');
+  }
+
+  getInvestmentPerformance(portfolioId): Observable<any> {
+    if (environment.useMockData) {
+      return this.httpClient.get('assets/MockData/Funds/InvestmentPerformance.json');
+    } else {
+      return this.httpClient.get(this.baseUrl + 'api/MutualFunds/GetInvestmentPerformance/?portfolioId=' + portfolioId, httpOptions);
+    }
   }
 
 }

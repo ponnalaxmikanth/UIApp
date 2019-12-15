@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges, Input, SimpleChanges } from '@angular/core';
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4charts from '@amcharts/amcharts4/charts';
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
@@ -15,7 +15,9 @@ import { HomeService } from '../../../../Services/home.service';
 })
 
 export class ExpensesChartComponent implements OnInit {
-  public chartData: any;
+  public chartData: any = [];
+  public data: any = [];
+  @Input() type: any;
 
   constructor(private _homeService: HomeService) { }
 
@@ -23,15 +25,17 @@ export class ExpensesChartComponent implements OnInit {
     // this.createCylinderChart();
 
     this._homeService.getExpensesChartData().subscribe(val => {
-      this.chartData = val;
+      this.data = val;
+      // this.chartData = this.data;
       this.FormatChartData();
-      console.log('ExpensesChartComponent -- get Current expenses', val);
-      //this.creteLayeredColumnChart();
-      //this.createCylinderChart();
-      //this.CreateBarChart();
-
-      //this.CreateXYBarChart();
+      this.filterData();
       this.CreateLineChart();
+      // console.log('ExpensesChartComponent -- get Current expenses', val);
+      
+      // this.creteLayeredColumnChart();
+      // this.createCylinderChart();
+      // this.CreateBarChart();
+      // this.CreateXYBarChart();
     },
       error => {
         console.error('ExpensesChartComponent -- get Current expenses', error);
@@ -39,33 +43,67 @@ export class ExpensesChartComponent implements OnInit {
     );
   }
 
-  FormatChartData() {
+  filterData() {
     try {
-      var month = new Array();
-      month[0] = 'Jan';
-      month[1] = 'Feb';
-      month[2] = 'Mar';
-      month[3] = 'Apr';
-      month[4] = 'May';
-      month[5] = 'Jun';
-      month[6] = 'Jul';
-      month[7] = 'Aug';
-      month[8] = 'Sep';
-      month[9] = 'Oct';
-      month[10] = 'Nov';
-      month[11] = 'Dec';
-      if (this.chartData != null && this.chartData.length > 0) {
-        for ( let i = 0 ; i < this.chartData.length ; i++ ) {
-          var date = new Date(this.chartData[i].FromDate);
-          //console.log('ExpensesChartComponent -- FormatChartData', this.chartData[i], month[date.getMonth()], '/', date.getFullYear());
-          this._homeService.totalExpenses = this._homeService.totalExpenses + this.chartData[i].Expense;
-          this._homeService.totalBudget = this._homeService.totalBudget + this.chartData[i].Budget;
-          this._homeService.totalIncome = this._homeService.totalIncome + this.chartData[i].Credit;
-          // this.chartData[i].Period = month[date.getMonth()] +  ' / ' + date.getFullYear();
-          this.chartData[i].Period = (date.getMonth() + 1) +  '/' + date.getFullYear().toString().substr(-2);
+
+      if (this.data != null && this.data.length > 0) {
+        this._homeService.totalExpenses = 0;
+        this._homeService.totalBudget = 0;
+        this._homeService.totalIncome = 0;
+        this.chartData = [];
+        const year = (new Date()).getFullYear();
+        for ( let i = 0 ; i < this.data.length ; i++ ) {
+          const date = new Date(this.data[i].FromDate);
+          if ((!this.type) || (this.type && date.getFullYear() === year)) {
+            this._homeService.totalExpenses = this._homeService.totalExpenses + this.data[i].Expense;
+            this._homeService.totalBudget = this._homeService.totalBudget + this.data[i].Budget;
+            this._homeService.totalIncome = this._homeService.totalIncome + this.data[i].Credit;
+            this.chartData.push(this.data[i]);
+            // this.chartData[i].Period = (date.getMonth() + 1) +  '/' + date.getFullYear().toString().substr(-2);
+          }
         }
       }
-      console.log('ExpensesChartComponent -- FormatChartData', this._homeService.totalExpenses, this._homeService.totalBudget, this.chartData);
+      // console.log('ExpensesChartComponent -- filterData', this.type, this.chartData);
+    } catch (ex) {
+      console.error('ExpensesChartComponent -- filterData', ex);
+    }
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    try {
+      this.type = changes.type.currentValue;
+      // console.log('ExpensesChartComponent -- ngOnChanges', this.type);
+      this.filterData();
+      this.CreateLineChart();
+    } catch (ex) { console.error('ExpensesChartComponent -- ngOnChanges', ex); }
+  }
+
+  FormatChartData() {
+    try {
+      // const month = new Array();
+      // month[0] = 'Jan';
+      // month[1] = 'Feb';
+      // month[2] = 'Mar';
+      // month[3] = 'Apr';
+      // month[4] = 'May';
+      // month[5] = 'Jun';
+      // month[6] = 'Jul';
+      // month[7] = 'Aug';
+      // month[8] = 'Sep';
+      // month[9] = 'Oct';
+      // month[10] = 'Nov';
+      // month[11] = 'Dec';
+      if (this.data != null && this.data.length > 0) {
+        for ( let i = 0 ; i < this.data.length ; i++ ) {
+          const date = new Date(this.data[i].FromDate);
+          this._homeService.totalExpenses = this._homeService.totalExpenses + this.data[i].Expense;
+          this._homeService.totalBudget = this._homeService.totalBudget + this.data[i].Budget;
+          this._homeService.totalIncome = this._homeService.totalIncome + this.data[i].Credit;
+
+          this.data[i].Period = (date.getMonth() + 1) +  '/' + date.getFullYear().toString().substr(-2);
+        }
+      }
+      // console.log('ExpensesChartComponent -- FormatChartData', this._homeService.totalExpenses, this._homeService.totalBudget, this.chartData);
     } catch (ex) {
       console.error('ExpensesChartComponent -- FormatChartData', ex);
     }
@@ -81,15 +119,34 @@ export class ExpensesChartComponent implements OnInit {
       am4core.color('#00FF00') // Expenses
     ];
 
+    // const label = chart.createChild(am4core.Label);
+    // label.fontSize = 6;
+    // label.align = 'center';
+    // label.isMeasured = false;
+    // label.x = 70;
+    // label.y = 20;
+
     // Create category axis
     const categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
     categoryAxis.dataFields.category = 'Period';
     categoryAxis.renderer.opposite = false;
+    const label = categoryAxis.renderer.labels.template;
+    label.wrap = true;
+    label.maxWidth = 120;
+    label.fontSize = 12;
 
     // Create value axis
     const valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
     valueAxis.renderer.inversed = false;
-    valueAxis.renderer.minLabelPosition = 0.01;
+    valueAxis.renderer.inside = true;
+    // valueAxis.renderer.maxLabelPosition = 0.5;
+    valueAxis.renderer.labels.template.dy = -20;
+    // valueAxis.renderer.minLabelPosition = 0.01;
+    const axislabel = valueAxis.renderer.labels.template;
+    axislabel.wrap = true;
+    axislabel.maxWidth = 120;
+    axislabel.fontSize = 12;
+    // axislabel.template.rotation = -45;
 
     this.CreateLineSeries(chart, 'Period', 'Budget', 'Budget');
     this.CreateLineSeries(chart, 'Period', 'Expense', 'Expense');

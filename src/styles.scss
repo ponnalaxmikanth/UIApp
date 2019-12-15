@@ -3,6 +3,9 @@
 @import '~@nebular/theme/styles/globals';
 @import "~font-awesome/css/font-awesome.css";
 
+html {
+  font-size: 13px;
+}
 @include nb-install() {
   @include nb-theme-global();
 };

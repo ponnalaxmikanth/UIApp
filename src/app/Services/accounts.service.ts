@@ -16,7 +16,7 @@ export class AccountsService {
  }
 
  getCurrentStatus(): Observable<any> {
-   console.log('AccountsService -- getCurrentStatus');
+   // console.log('AccountsService -- getCurrentStatus');
    if (environment.useMockData) {
       return this.httpClient.get('assets/MockData/Accounts/CurrentStatus.json');
     } else {

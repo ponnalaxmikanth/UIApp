@@ -8,7 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbButtonModule, NbActionsModule  } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { NbIconModule, NbMenuModule } from '@nebular/theme';
+import { NbCardModule, NbIconModule, NbMenuModule } from '@nebular/theme';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HeaderComponent } from './Layout/header/header.component';
 import { MenuComponent } from './Layout/menu/menu.component';
@@ -24,6 +25,7 @@ import { FundsService } from './Services/funds.service';
 import { HomeService } from './Services/home.service';
 import { StocksService } from './Services/stocks.service';
 import { AccountsService } from './Services/accounts.service';
+import { PerformanceComponent } from './Investments/funds/performance/performance.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { AccountsService } from './Services/accounts.service';
     MenuComponent,
     HeaderComponent
     //, DashboardComponent
-    , StocksComponent, ExpensesComponent, FundsComponent
+    , StocksComponent, ExpensesComponent, FundsComponent, PerformanceComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +47,8 @@ import { AccountsService } from './Services/accounts.service';
     , NbSidebarModule.forRoot()
     , NbActionsModule
     , NbIconModule
+    , NgbModule
+    , NbCardModule
     , HttpClientModule
     , DashboardModule
   ],

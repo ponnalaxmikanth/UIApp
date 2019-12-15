@@ -1,0 +1,1857 @@
+[
+    {
+        "Date": "2018-09-05T00:00:00",
+        "Period": -1,
+        "Investment": 1100952.59,
+        "CurrentValue": 1125928.65,
+        "Profit": 24976.08
+    },
+    {
+        "Date": "2018-09-07T00:00:00",
+        "Period": -1,
+        "Investment": 1100952.59,
+        "CurrentValue": 1136402.1,
+        "Profit": 35449.52
+    },
+    {
+        "Date": "2018-09-10T00:00:00",
+        "Period": -1,
+        "Investment": 1100952.59,
+        "CurrentValue": 1123907.84,
+        "Profit": 22955.27
+    },
+    {
+        "Date": "2018-09-13T00:00:00",
+        "Period": -1,
+        "Investment": 1126052.59,
+        "CurrentValue": 1137563.87,
+        "Profit": 11511.3
+    },
+    {
+        "Date": "2018-09-14T00:00:00",
+        "Period": -1,
+        "Investment": 1126052.59,
+        "CurrentValue": 1150677.54,
+        "Profit": 24624.97
+    },
+    {
+        "Date": "2018-09-15T00:00:00",
+        "Period": -1,
+        "Investment": 1126052.59,
+        "CurrentValue": 1150511.84,
+        "Profit": 24459.26
+    },
+    {
+        "Date": "2018-09-17T00:00:00",
+        "Period": -1,
+        "Investment": 1100952.59,
+        "CurrentValue": 1118735.44,
+        "Profit": 17782.87
+    },
+    {
+        "Date": "2018-09-18T00:00:00",
+        "Period": -1,
+        "Investment": 1130952.59,
+        "CurrentValue": 1136910.87,
+        "Profit": 5958.3
+    },
+    {
+        "Date": "2018-09-19T00:00:00",
+        "Period": -1,
+        "Investment": 1130952.59,
+        "CurrentValue": 1131154.91,
+        "Profit": 202.34
+    },
+    {
+        "Date": "2018-09-20T00:00:00",
+        "Period": -1,
+        "Investment": 1130952.59,
+        "CurrentValue": 1131788.45,
+        "Profit": 835.88
+    },
+    {
+        "Date": "2018-09-22T00:00:00",
+        "Period": -1,
+        "Investment": 1130952.59,
+        "CurrentValue": 1113830.68,
+        "Profit": -17121.89
+    },
+    {
+        "Date": "2018-09-24T00:00:00",
+        "Period": -1,
+        "Investment": 1130952.59,
+        "CurrentValue": 1093769.77,
+        "Profit": -37182.8
+    },
+    {
+        "Date": "2018-09-25T00:00:00",
+        "Period": -1,
+        "Investment": 1130952.59,
+        "CurrentValue": 1096597.23,
+        "Profit": -34355.34
+    },
+    {
+        "Date": "2018-09-26T00:00:00",
+        "Period": -1,
+        "Investment": 1130952.59,
+        "CurrentValue": 1097406.9,
+        "Profit": -33545.67
+    },
+    {
+        "Date": "2018-09-28T00:00:00",
+        "Period": -1,
+        "Investment": 1160952.59,
+        "CurrentValue": 1115145.39,
+        "Profit": -45807.18
+    },
+    {
+        "Date": "2018-09-29T00:00:00",
+        "Period": -1,
+        "Investment": 1160952.59,
+        "CurrentValue": 1103192.74,
+        "Profit": -57759.83
+    },
+    {
+        "Date": "2018-10-01T00:00:00",
+        "Period": -1,
+        "Investment": 1160952.59,
+        "CurrentValue": 1105448.36,
+        "Profit": -55504.21
+    },
+    {
+        "Date": "2018-10-02T00:00:00",
+        "Period": -1,
+        "Investment": 1160952.59,
+        "CurrentValue": 1105447.92,
+        "Profit": -55504.66
+    },
+    {
+        "Date": "2018-10-04T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1078955.21,
+        "Profit": -83449.5
+    },
+    {
+        "Date": "2018-10-05T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1058238.82,
+        "Profit": -104165.89
+    },
+    {
+        "Date": "2018-10-08T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1045219.89,
+        "Profit": -117184.82
+    },
+    {
+        "Date": "2018-10-09T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1042729.06,
+        "Profit": -119675.66
+    },
+    {
+        "Date": "2018-10-10T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1068876.72,
+        "Profit": -93527.99
+    },
+    {
+        "Date": "2018-10-11T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1048397.19,
+        "Profit": -114007.53
+    },
+    {
+        "Date": "2018-10-15T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1074133.34,
+        "Profit": -88271.38
+    },
+    {
+        "Date": "2018-10-16T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1086872.31,
+        "Profit": -75532.4
+    },
+    {
+        "Date": "2018-10-17T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1072664.7,
+        "Profit": -89740.01
+    },
+    {
+        "Date": "2018-10-18T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1072231.91,
+        "Profit": -90172.8
+    },
+    {
+        "Date": "2018-10-19T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1061563.85,
+        "Profit": -100840.86
+    },
+    {
+        "Date": "2018-10-21T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1061023.75,
+        "Profit": -101380.96
+    },
+    {
+        "Date": "2018-10-22T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1051074.04,
+        "Profit": -111330.67
+    },
+    {
+        "Date": "2018-10-23T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1038299.15,
+        "Profit": -124105.56
+    },
+    {
+        "Date": "2018-10-25T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1037343.87,
+        "Profit": -125060.84
+    },
+    {
+        "Date": "2018-10-27T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1031799.43,
+        "Profit": -130605.28
+    },
+    {
+        "Date": "2018-10-29T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1048490.94,
+        "Profit": -113913.77
+    },
+    {
+        "Date": "2018-10-30T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1053614.97,
+        "Profit": -108789.75
+    },
+    {
+        "Date": "2018-11-01T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1073968.43,
+        "Profit": -88436.28
+    },
+    {
+        "Date": "2018-11-02T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1082372.83,
+        "Profit": -80031.88
+    },
+    {
+        "Date": "2018-11-05T00:00:00",
+        "Period": -1,
+        "Investment": 1162404.73,
+        "CurrentValue": 1081535.65,
+        "Profit": -80869.07
+    },
+    {
+        "Date": "2018-11-06T00:00:00",
+        "Period": -1,
+        "Investment": 1182404.73,
+        "CurrentValue": 1100264.55,
+        "Profit": -82140.16
+    },
+    {
+        "Date": "2018-11-07T00:00:00",
+        "Period": -1,
+        "Investment": 1182404.73,
+        "CurrentValue": 1100264.55,
+        "Profit": -82140.16
+    },
+    {
+        "Date": "2018-11-09T00:00:00",
+        "Period": -1,
+        "Investment": 1187404.73,
+        "CurrentValue": 1115263.27,
+        "Profit": -72141.44
+    },
+    {
+        "Date": "2018-11-11T00:00:00",
+        "Period": -1,
+        "Investment": 1183518.46,
+        "CurrentValue": 1114074.39,
+        "Profit": -69444.05
+    },
+    {
+        "Date": "2018-11-12T00:00:00",
+        "Period": -1,
+        "Investment": 1183518.46,
+        "CurrentValue": 1106080.05,
+        "Profit": -77438.39
+    },
+    {
+        "Date": "2018-11-13T00:00:00",
+        "Period": -1,
+        "Investment": 1183518.46,
+        "CurrentValue": 1109877.2,
+        "Profit": -73641.23
+    },
+    {
+        "Date": "2018-11-14T00:00:00",
+        "Period": -1,
+        "Investment": 1183518.46,
+        "CurrentValue": 1108435.63,
+        "Profit": -75082.81
+    },
+    {
+        "Date": "2018-11-15T00:00:00",
+        "Period": -1,
+        "Investment": 1198518.46,
+        "CurrentValue": 1126163.33,
+        "Profit": -72355.11
+    },
+    {
+        "Date": "2018-11-16T00:00:00",
+        "Period": -1,
+        "Investment": 1203518.46,
+        "CurrentValue": 1132748.17,
+        "Profit": -70770.27
+    },
+    {
+        "Date": "2018-11-19T00:00:00",
+        "Period": -1,
+        "Investment": 1203518.46,
+        "CurrentValue": 1137499.42,
+        "Profit": -66019.02
+    },
+    {
+        "Date": "2018-11-20T00:00:00",
+        "Period": -1,
+        "Investment": 1203518.46,
+        "CurrentValue": 1128081.01,
+        "Profit": -75437.43
+    },
+    {
+        "Date": "2018-11-25T00:00:00",
+        "Period": -1,
+        "Investment": 1203518.46,
+        "CurrentValue": 1120681.11,
+        "Profit": -82837.33
+    },
+    {
+        "Date": "2018-11-29T00:00:00",
+        "Period": -1,
+        "Investment": 1203518.46,
+        "CurrentValue": 1132140.4,
+        "Profit": -71378.04
+    },
+    {
+        "Date": "2018-11-30T00:00:00",
+        "Period": -1,
+        "Investment": 1203518.46,
+        "CurrentValue": 1137840.39,
+        "Profit": -65678.04
+    },
+    {
+        "Date": "2018-12-01T00:00:00",
+        "Period": -1,
+        "Investment": 1203518.46,
+        "CurrentValue": 1137840.39,
+        "Profit": -65678.04
+    },
+    {
+        "Date": "2018-12-03T00:00:00",
+        "Period": -1,
+        "Investment": 1203518.46,
+        "CurrentValue": 1140230.88,
+        "Profit": -63287.56
+    },
+    {
+        "Date": "2018-12-04T00:00:00",
+        "Period": -1,
+        "Investment": 1218518.46,
+        "CurrentValue": 1157787.98,
+        "Profit": -60730.45
+    },
+    {
+        "Date": "2018-12-05T00:00:00",
+        "Period": -1,
+        "Investment": 1223518.46,
+        "CurrentValue": 1152110.23,
+        "Profit": -71408.21
+    },
+    {
+        "Date": "2018-12-06T00:00:00",
+        "Period": -1,
+        "Investment": 1223518.46,
+        "CurrentValue": 1134824.63,
+        "Profit": -88693.81
+    },
+    {
+        "Date": "2018-12-07T00:00:00",
+        "Period": -1,
+        "Investment": 1223518.46,
+        "CurrentValue": 1138608.36,
+        "Profit": -84910.08
+    },
+    {
+        "Date": "2018-12-10T00:00:00",
+        "Period": -1,
+        "Investment": 1223518.46,
+        "CurrentValue": 1121583.12,
+        "Profit": -101935.32
+    },
+    {
+        "Date": "2018-12-11T00:00:00",
+        "Period": -1,
+        "Investment": 1223518.46,
+        "CurrentValue": 1131940.56,
+        "Profit": -91577.88
+    },
+    {
+        "Date": "2018-12-12T00:00:00",
+        "Period": -1,
+        "Investment": 1223518.46,
+        "CurrentValue": 1153939.94,
+        "Profit": -69578.5
+    },
+    {
+        "Date": "2018-12-13T00:00:00",
+        "Period": -1,
+        "Investment": 1238518.46,
+        "CurrentValue": 1177596.16,
+        "Profit": -60922.28
+    },
+    {
+        "Date": "2018-12-14T00:00:00",
+        "Period": -1,
+        "Investment": 1243518.46,
+        "CurrentValue": 1183107.25,
+        "Profit": -60411.19
+    },
+    {
+        "Date": "2018-12-15T00:00:00",
+        "Period": -1,
+        "Investment": 1243518.46,
+        "CurrentValue": 1183150.11,
+        "Profit": -60368.33
+    },
+    {
+        "Date": "2018-12-16T00:00:00",
+        "Period": -1,
+        "Investment": 1243518.46,
+        "CurrentValue": 1183150.11,
+        "Profit": -60368.33
+    },
+    {
+        "Date": "2018-12-17T00:00:00",
+        "Period": -1,
+        "Investment": 1243518.46,
+        "CurrentValue": 1187156.63,
+        "Profit": -56361.81
+    },
+    {
+        "Date": "2018-12-18T00:00:00",
+        "Period": -1,
+        "Investment": 1243518.46,
+        "CurrentValue": 1188719.23,
+        "Profit": -54799.21
+    },
+    {
+        "Date": "2018-12-19T00:00:00",
+        "Period": -1,
+        "Investment": 1258518.46,
+        "CurrentValue": 1213497.27,
+        "Profit": -45021.16
+    },
+    {
+        "Date": "2018-12-20T00:00:00",
+        "Period": -1,
+        "Investment": 1258518.46,
+        "CurrentValue": 1212216.74,
+        "Profit": -46301.7
+    },
+    {
+        "Date": "2018-12-21T00:00:00",
+        "Period": -1,
+        "Investment": 1258518.46,
+        "CurrentValue": 1197248.5,
+        "Profit": -61269.94
+    },
+    {
+        "Date": "2018-12-24T00:00:00",
+        "Period": -1,
+        "Investment": 1258518.46,
+        "CurrentValue": 1189107.69,
+        "Profit": -69410.75
+    },
+    {
+        "Date": "2018-12-26T00:00:00",
+        "Period": -1,
+        "Investment": 1258518.46,
+        "CurrentValue": 1190065.59,
+        "Profit": -68452.85
+    },
+    {
+        "Date": "2018-12-27T00:00:00",
+        "Period": -1,
+        "Investment": 1278518.46,
+        "CurrentValue": 1214758.24,
+        "Profit": -63760.19
+    },
+    {
+        "Date": "2018-12-30T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1229834.93,
+        "Profit": -53683.5
+    },
+    {
+        "Date": "2018-12-31T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1233612.11,
+        "Profit": -49906.32
+    },
+    {
+        "Date": "2019-01-01T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1236029.63,
+        "Profit": -47488.8
+    },
+    {
+        "Date": "2019-01-02T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1227636.28,
+        "Profit": -55882.15
+    },
+    {
+        "Date": "2019-01-04T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1220505.59,
+        "Profit": -63012.85
+    },
+    {
+        "Date": "2019-01-05T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1221038.57,
+        "Profit": -62479.86
+    },
+    {
+        "Date": "2019-01-06T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1221038.57,
+        "Profit": -62479.86
+    },
+    {
+        "Date": "2019-01-07T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1223378.75,
+        "Profit": -60139.68
+    },
+    {
+        "Date": "2019-01-08T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1225786.44,
+        "Profit": -57732.0
+    },
+    {
+        "Date": "2019-01-09T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1228259.2,
+        "Profit": -55259.23
+    },
+    {
+        "Date": "2019-01-10T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1230382.16,
+        "Profit": -53136.27
+    },
+    {
+        "Date": "2019-01-12T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1227547.28,
+        "Profit": -55971.16
+    },
+    {
+        "Date": "2019-01-15T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1233445.12,
+        "Profit": -50073.32
+    },
+    {
+        "Date": "2019-01-16T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1233644.14,
+        "Profit": -49874.3
+    },
+    {
+        "Date": "2019-01-18T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1226222.92,
+        "Profit": -57295.51
+    },
+    {
+        "Date": "2019-01-19T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1226705.58,
+        "Profit": -56812.86
+    },
+    {
+        "Date": "2019-01-21T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1224832.22,
+        "Profit": -58686.21
+    },
+    {
+        "Date": "2019-01-22T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1222210.76,
+        "Profit": -61307.67
+    },
+    {
+        "Date": "2019-01-23T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1216441.79,
+        "Profit": -67076.64
+    },
+    {
+        "Date": "2019-01-24T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1214725.25,
+        "Profit": -68793.19
+    },
+    {
+        "Date": "2019-01-25T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1203159.21,
+        "Profit": -80359.22
+    },
+    {
+        "Date": "2019-01-27T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1203691.08,
+        "Profit": -79827.36
+    },
+    {
+        "Date": "2019-01-31T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1206372.77,
+        "Profit": -77145.66
+    },
+    {
+        "Date": "2019-02-01T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1210794.91,
+        "Profit": -72723.53
+    },
+    {
+        "Date": "2019-02-03T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1210646.3,
+        "Profit": -72872.13
+    },
+    {
+        "Date": "2019-02-04T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1205861.93,
+        "Profit": -77656.5
+    },
+    {
+        "Date": "2019-02-05T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1202209.17,
+        "Profit": -81309.26
+    },
+    {
+        "Date": "2019-02-06T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1210237.84,
+        "Profit": -73280.59
+    },
+    {
+        "Date": "2019-02-07T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1215997.15,
+        "Profit": -67521.29
+    },
+    {
+        "Date": "2019-02-08T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1204540.36,
+        "Profit": -78978.07
+    },
+    {
+        "Date": "2019-02-09T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1203708.56,
+        "Profit": -79809.88
+    },
+    {
+        "Date": "2019-02-11T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1192460.73,
+        "Profit": -91057.71
+    },
+    {
+        "Date": "2019-02-12T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1187349.18,
+        "Profit": -96169.25
+    },
+    {
+        "Date": "2019-02-13T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1184057.71,
+        "Profit": -99460.72
+    },
+    {
+        "Date": "2019-02-14T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1182436.37,
+        "Profit": -101082.06
+    },
+    {
+        "Date": "2019-02-15T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1172065.83,
+        "Profit": -111452.6
+    },
+    {
+        "Date": "2019-02-18T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1163154.28,
+        "Profit": -120364.16
+    },
+    {
+        "Date": "2019-02-19T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1163863.22,
+        "Profit": -119655.21
+    },
+    {
+        "Date": "2019-02-20T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1173688.93,
+        "Profit": -109829.5
+    },
+    {
+        "Date": "2019-02-21T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1172342.0,
+        "Profit": -111176.43
+    },
+    {
+        "Date": "2019-02-23T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1176137.42,
+        "Profit": -107381.02
+    },
+    {
+        "Date": "2019-02-25T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1185239.82,
+        "Profit": -98278.62
+    },
+    {
+        "Date": "2019-02-27T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1185097.12,
+        "Profit": -98421.32
+    },
+    {
+        "Date": "2019-02-28T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1188626.48,
+        "Profit": -94891.95
+    },
+    {
+        "Date": "2019-03-01T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1202046.31,
+        "Profit": -81472.13
+    },
+    {
+        "Date": "2019-03-05T00:00:00",
+        "Period": -1,
+        "Investment": 1283518.46,
+        "CurrentValue": 1220067.68,
+        "Profit": -63450.76
+    },
+    {
+        "Date": "2019-03-06T00:00:00",
+        "Period": -1,
+        "Investment": 1299980.6,
+        "CurrentValue": 1247293.79,
+        "Profit": -52686.78
+    },
+    {
+        "Date": "2019-03-07T00:00:00",
+        "Period": -1,
+        "Investment": 1299980.6,
+        "CurrentValue": 1246188.41,
+        "Profit": -53792.17
+    },
+    {
+        "Date": "2019-03-08T00:00:00",
+        "Period": -1,
+        "Investment": 1299980.6,
+        "CurrentValue": 1243083.98,
+        "Profit": -56896.6
+    },
+    {
+        "Date": "2019-03-10T00:00:00",
+        "Period": -1,
+        "Investment": 1299980.6,
+        "CurrentValue": 1242818.37,
+        "Profit": -57162.21
+    },
+    {
+        "Date": "2019-03-11T00:00:00",
+        "Period": -1,
+        "Investment": 1299980.6,
+        "CurrentValue": 1259963.59,
+        "Profit": -40016.99
+    },
+    {
+        "Date": "2019-03-12T00:00:00",
+        "Period": -1,
+        "Investment": 1304980.6,
+        "CurrentValue": 1275993.77,
+        "Profit": -28986.81
+    },
+    {
+        "Date": "2019-03-13T00:00:00",
+        "Period": -1,
+        "Investment": 1319980.6,
+        "CurrentValue": 1288913.24,
+        "Profit": -31067.33
+    },
+    {
+        "Date": "2019-03-15T00:00:00",
+        "Period": -1,
+        "Investment": 1319980.6,
+        "CurrentValue": 1289181.95,
+        "Profit": -30798.62
+    },
+    {
+        "Date": "2019-03-16T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1289197.91,
+        "Profit": -28081.46
+    },
+    {
+        "Date": "2019-03-18T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1287944.65,
+        "Profit": -29334.72
+    },
+    {
+        "Date": "2019-03-19T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1293562.54,
+        "Profit": -23716.83
+    },
+    {
+        "Date": "2019-03-20T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1291547.58,
+        "Profit": -25731.78
+    },
+    {
+        "Date": "2019-03-21T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1291267.18,
+        "Profit": -26012.19
+    },
+    {
+        "Date": "2019-03-22T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1285988.87,
+        "Profit": -31290.5
+    },
+    {
+        "Date": "2019-03-23T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1284924.29,
+        "Profit": -32355.08
+    },
+    {
+        "Date": "2019-03-24T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1284924.29,
+        "Profit": -32355.08
+    },
+    {
+        "Date": "2019-03-25T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1274269.65,
+        "Profit": -43009.72
+    },
+    {
+        "Date": "2019-03-26T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1284818.68,
+        "Profit": -32460.69
+    },
+    {
+        "Date": "2019-03-27T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1288887.04,
+        "Profit": -28392.33
+    },
+    {
+        "Date": "2019-03-28T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1298879.27,
+        "Profit": -18400.1
+    },
+    {
+        "Date": "2019-03-31T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1307608.85,
+        "Profit": -9670.51
+    },
+    {
+        "Date": "2019-04-01T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1314435.56,
+        "Profit": -2843.81
+    },
+    {
+        "Date": "2019-04-02T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1314480.5,
+        "Profit": -2798.87
+    },
+    {
+        "Date": "2019-04-03T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1306647.61,
+        "Profit": -10631.76
+    },
+    {
+        "Date": "2019-04-04T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1301564.46,
+        "Profit": -15714.91
+    },
+    {
+        "Date": "2019-04-05T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1309403.37,
+        "Profit": -7876.0
+    },
+    {
+        "Date": "2019-04-06T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1310088.75,
+        "Profit": -7190.62
+    },
+    {
+        "Date": "2019-04-07T00:00:00",
+        "Period": -1,
+        "Investment": 1317279.39,
+        "CurrentValue": 1310088.75,
+        "Profit": -7190.62
+    },
+    {
+        "Date": "2019-04-08T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1304561.91,
+        "Profit": -11580.63
+    },
+    {
+        "Date": "2019-04-09T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1306102.78,
+        "Profit": -10039.76
+    },
+    {
+        "Date": "2019-04-10T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1302170.01,
+        "Profit": -13972.53
+    },
+    {
+        "Date": "2019-04-11T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1301839.18,
+        "Profit": -14303.35
+    },
+    {
+        "Date": "2019-04-12T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1305510.9,
+        "Profit": -10631.64
+    },
+    {
+        "Date": "2019-04-16T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1315115.81,
+        "Profit": -1026.73
+    },
+    {
+        "Date": "2019-04-17T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1315371.75,
+        "Profit": -770.79
+    },
+    {
+        "Date": "2019-04-18T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1308341.92,
+        "Profit": -7800.62
+    },
+    {
+        "Date": "2019-04-19T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1308365.67,
+        "Profit": -7776.87
+    },
+    {
+        "Date": "2019-04-21T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1308120.53,
+        "Profit": -8022.0
+    },
+    {
+        "Date": "2019-04-22T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1295423.86,
+        "Profit": -20718.68
+    },
+    {
+        "Date": "2019-04-23T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1295163.29,
+        "Profit": -20979.25
+    },
+    {
+        "Date": "2019-04-24T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1304431.21,
+        "Profit": -11711.33
+    },
+    {
+        "Date": "2019-04-25T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1300291.89,
+        "Profit": -15850.65
+    },
+    {
+        "Date": "2019-04-26T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1305633.2,
+        "Profit": -10509.34
+    },
+    {
+        "Date": "2019-04-29T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1305853.35,
+        "Profit": -10289.19
+    },
+    {
+        "Date": "2019-04-30T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1301872.59,
+        "Profit": -14269.95
+    },
+    {
+        "Date": "2019-05-01T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1301828.16,
+        "Profit": -14314.38
+    },
+    {
+        "Date": "2019-05-02T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1296254.58,
+        "Profit": -19887.95
+    },
+    {
+        "Date": "2019-05-03T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1291959.82,
+        "Profit": -24182.72
+    },
+    {
+        "Date": "2019-05-05T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1292074.6,
+        "Profit": -24067.94
+    },
+    {
+        "Date": "2019-05-06T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1284195.76,
+        "Profit": -31946.77
+    },
+    {
+        "Date": "2019-05-07T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1275556.63,
+        "Profit": -40585.91
+    },
+    {
+        "Date": "2019-05-08T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1261572.42,
+        "Profit": -54570.12
+    },
+    {
+        "Date": "2019-05-09T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1259472.48,
+        "Profit": -56670.06
+    },
+    {
+        "Date": "2019-05-10T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1259139.14,
+        "Profit": -57003.4
+    },
+    {
+        "Date": "2019-05-14T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1244808.64,
+        "Profit": -71333.9
+    },
+    {
+        "Date": "2019-05-15T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1241203.27,
+        "Profit": -74939.26
+    },
+    {
+        "Date": "2019-05-16T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1247433.56,
+        "Profit": -68708.97
+    },
+    {
+        "Date": "2019-05-17T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1256466.37,
+        "Profit": -59676.16
+    },
+    {
+        "Date": "2019-05-18T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1256077.6,
+        "Profit": -60064.94
+    },
+    {
+        "Date": "2019-05-20T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1292817.37,
+        "Profit": -23325.17
+    },
+    {
+        "Date": "2019-05-21T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1282510.28,
+        "Profit": -33632.26
+    },
+    {
+        "Date": "2019-05-22T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1285455.32,
+        "Profit": -30687.21
+    },
+    {
+        "Date": "2019-05-23T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1284618.07,
+        "Profit": -31524.46
+    },
+    {
+        "Date": "2019-05-24T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1307233.85,
+        "Profit": -8908.69
+    },
+    {
+        "Date": "2019-05-25T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1307515.35,
+        "Profit": -8627.19
+    },
+    {
+        "Date": "2019-05-27T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1322379.33,
+        "Profit": 6236.79
+    },
+    {
+        "Date": "2019-05-28T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1323788.9,
+        "Profit": 7646.36
+    },
+    {
+        "Date": "2019-05-29T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1318122.94,
+        "Profit": 1980.41
+    },
+    {
+        "Date": "2019-05-30T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1323299.25,
+        "Profit": 7156.71
+    },
+    {
+        "Date": "2019-05-31T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1322763.94,
+        "Profit": 6621.4
+    },
+    {
+        "Date": "2019-06-01T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1323014.7,
+        "Profit": 6872.16
+    },
+    {
+        "Date": "2019-06-02T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1323014.7,
+        "Profit": 6872.16
+    },
+    {
+        "Date": "2019-06-03T00:00:00",
+        "Period": -1,
+        "Investment": 1316142.56,
+        "CurrentValue": 1331429.25,
+        "Profit": 15286.71
+    },
+    {
+        "Date": "2019-06-04T00:00:00",
+        "Period": -1,
+        "Investment": 1315282.53,
+        "CurrentValue": 1326510.21,
+        "Profit": 11227.71
+    },
+    {
+        "Date": "2019-06-05T00:00:00",
+        "Period": -1,
+        "Investment": 1315282.53,
+        "CurrentValue": 1326701.02,
+        "Profit": 11418.52
+    },
+    {
+        "Date": "2019-06-06T00:00:00",
+        "Period": -1,
+        "Investment": 1315282.53,
+        "CurrentValue": 1309778.48,
+        "Profit": -5504.02
+    },
+    {
+        "Date": "2019-06-07T00:00:00",
+        "Period": -1,
+        "Investment": 1315282.53,
+        "CurrentValue": 1309882.15,
+        "Profit": -5400.35
+    },
+    {
+        "Date": "2019-06-08T00:00:00",
+        "Period": -1,
+        "Investment": 1315282.53,
+        "CurrentValue": 1310361.17,
+        "Profit": -4921.33
+    },
+    {
+        "Date": "2019-06-10T00:00:00",
+        "Period": -1,
+        "Investment": 1315282.53,
+        "CurrentValue": 1311842.28,
+        "Profit": -3440.22
+    },
+    {
+        "Date": "2019-06-11T00:00:00",
+        "Period": -1,
+        "Investment": 1285282.53,
+        "CurrentValue": 1289552.73,
+        "Profit": 4270.23
+    },
+    {
+        "Date": "2019-06-12T00:00:00",
+        "Period": -1,
+        "Investment": 1285282.53,
+        "CurrentValue": 1284253.71,
+        "Profit": -1028.79
+    },
+    {
+        "Date": "2019-06-13T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1272632.34,
+        "Profit": -2650.16
+    },
+    {
+        "Date": "2019-06-17T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1248927.74,
+        "Profit": -26354.76
+    },
+    {
+        "Date": "2019-06-18T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1250231.88,
+        "Profit": -25050.62
+    },
+    {
+        "Date": "2019-06-19T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1244438.82,
+        "Profit": -30843.68
+    },
+    {
+        "Date": "2019-06-20T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1257332.41,
+        "Profit": -17950.09
+    },
+    {
+        "Date": "2019-06-22T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1252250.36,
+        "Profit": -23032.14
+    },
+    {
+        "Date": "2019-06-23T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1252250.36,
+        "Profit": -23032.14
+    },
+    {
+        "Date": "2019-06-25T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1256443.29,
+        "Profit": -18839.21
+    },
+    {
+        "Date": "2019-06-26T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1263675.33,
+        "Profit": -11607.17
+    },
+    {
+        "Date": "2019-06-27T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1265867.38,
+        "Profit": -9415.12
+    },
+    {
+        "Date": "2019-06-29T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1265096.45,
+        "Profit": -10186.05
+    },
+    {
+        "Date": "2019-06-30T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1265096.45,
+        "Profit": -10186.05
+    },
+    {
+        "Date": "2019-08-21T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1161300.42,
+        "Profit": -113982.08
+    },
+    {
+        "Date": "2019-08-22T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1144963.15,
+        "Profit": -130319.35
+    },
+    {
+        "Date": "2019-08-24T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1150789.99,
+        "Profit": -124492.51
+    },
+    {
+        "Date": "2019-08-26T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1168933.29,
+        "Profit": -106349.21
+    },
+    {
+        "Date": "2019-08-27T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1176065.39,
+        "Profit": -99217.11
+    },
+    {
+        "Date": "2019-08-29T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1166624.07,
+        "Profit": -108658.43
+    },
+    {
+        "Date": "2019-08-30T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1174993.24,
+        "Profit": -100289.26
+    },
+    {
+        "Date": "2019-09-03T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1158631.65,
+        "Profit": -116650.85
+    },
+    {
+        "Date": "2019-09-04T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1162757.88,
+        "Profit": -112524.62
+    },
+    {
+        "Date": "2019-09-05T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1166019.01,
+        "Profit": -109263.49
+    },
+    {
+        "Date": "2019-09-06T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1174582.18,
+        "Profit": -100700.32
+    },
+    {
+        "Date": "2019-09-09T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1174582.18,
+        "Profit": -100700.32
+    },
+    {
+        "Date": "2019-09-10T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1174582.18,
+        "Profit": -100700.32
+    },
+    {
+        "Date": "2019-09-11T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1174582.18,
+        "Profit": -100700.32
+    },
+    {
+        "Date": "2019-09-12T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1184858.05,
+        "Profit": -90424.45
+    },
+    {
+        "Date": "2019-09-13T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1192229.19,
+        "Profit": -83053.31
+    },
+    {
+        "Date": "2019-09-16T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1191906.74,
+        "Profit": -83375.76
+    },
+    {
+        "Date": "2019-09-18T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1179951.13,
+        "Profit": -95331.37
+    },
+    {
+        "Date": "2019-09-19T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1166670.95,
+        "Profit": -108611.55
+    },
+    {
+        "Date": "2019-09-20T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1217902.09,
+        "Profit": -57380.41
+    },
+    {
+        "Date": "2019-09-23T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1249092.04,
+        "Profit": -26190.47
+    },
+    {
+        "Date": "2019-09-24T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1246807.34,
+        "Profit": -28475.16
+    },
+    {
+        "Date": "2019-09-25T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1232399.97,
+        "Profit": -42882.53
+    },
+    {
+        "Date": "2019-09-26T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1242745.5,
+        "Profit": -32537.0
+    },
+    {
+        "Date": "2019-09-27T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1238869.68,
+        "Profit": -36412.83
+    },
+    {
+        "Date": "2019-09-29T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1238759.43,
+        "Profit": -36523.07
+    },
+    {
+        "Date": "2019-09-30T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1233202.92,
+        "Profit": -42079.58
+    },
+    {
+        "Date": "2019-10-01T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1218461.74,
+        "Profit": -56820.76
+    },
+    {
+        "Date": "2019-10-02T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1218472.74,
+        "Profit": -56809.76
+    },
+    {
+        "Date": "2019-10-03T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1215305.97,
+        "Profit": -59976.53
+    },
+    {
+        "Date": "2019-10-04T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1206669.48,
+        "Profit": -68613.02
+    },
+    {
+        "Date": "2019-10-07T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1196076.36,
+        "Profit": -79206.14
+    },
+    {
+        "Date": "2019-10-08T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1195947.22,
+        "Profit": -79335.28
+    },
+    {
+        "Date": "2019-10-09T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1208272.55,
+        "Profit": -67009.95
+    },
+    {
+        "Date": "2019-10-11T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1208349.8,
+        "Profit": -66932.7
+    },
+    {
+        "Date": "2019-10-12T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1208388.99,
+        "Profit": -66893.51
+    },
+    {
+        "Date": "2019-10-14T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1209157.93,
+        "Profit": -66124.57
+    },
+    {
+        "Date": "2019-10-15T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1212745.09,
+        "Profit": -62537.41
+    },
+    {
+        "Date": "2019-10-17T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1227909.04,
+        "Profit": -47373.46
+    },
+    {
+        "Date": "2019-10-19T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1239706.52,
+        "Profit": -35575.98
+    },
+    {
+        "Date": "2019-10-21T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1239706.52,
+        "Profit": -35575.98
+    },
+    {
+        "Date": "2019-10-22T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1234760.27,
+        "Profit": -40522.23
+    },
+    {
+        "Date": "2019-10-23T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1238626.16,
+        "Profit": -36656.34
+    },
+    {
+        "Date": "2019-10-24T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1232321.79,
+        "Profit": -42960.71
+    },
+    {
+        "Date": "2019-10-26T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1232586.85,
+        "Profit": -42695.65
+    },
+    {
+        "Date": "2019-10-28T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1232586.85,
+        "Profit": -42695.65
+    },
+    {
+        "Date": "2019-10-30T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1256588.48,
+        "Profit": -18694.02
+    },
+    {
+        "Date": "2019-10-31T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1264649.81,
+        "Profit": -10632.69
+    },
+    {
+        "Date": "2019-11-02T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1266646.58,
+        "Profit": -8635.92
+    },
+    {
+        "Date": "2019-11-05T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1262907.65,
+        "Profit": -12374.85
+    },
+    {
+        "Date": "2019-11-06T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1261597.48,
+        "Profit": -13685.02
+    },
+    {
+        "Date": "2019-11-07T00:00:00",
+        "Period": -1,
+        "Investment": 1275282.53,
+        "CurrentValue": 1264038.27,
+        "Profit": -11244.23
+    }
+]
