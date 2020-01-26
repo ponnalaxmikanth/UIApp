@@ -10,3 +10,7 @@ html {
   @include nb-theme-global();
 };
 /* You can add global styles to this file, and also import other style files */
+
+.nb-theme-corporate nb-layout .layout .layout-container .content .columns nb-layout-column {
+  padding: 1rem;
+}

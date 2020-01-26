@@ -2,29 +2,49 @@
   <nb-card size="large">
     <nb-card-header class="header">
       <!-- <i class="ion-social-usd"></i> -->
-      <div class="row">
-        <div class="title left col-xl-5">Expenses
+      <!-- <div class="row"> -->
+        <div class="left-section">
+          <span>Expenses</span>
           <ui-switch size="small" checkedLabel="MTD" uncheckedLabel="YTD" [(ngModel)]="graphperiod"
             (change)="onSwitchChange($event)"></ui-switch>
         </div>
-        <div class="right col-xl-7">
-          <div class="value">
-            <div class="delta right first-value"
-              [class.up]="this.currentExpenses?.Summary?.Debit < this.currentExpenses?.Summary?.BudgetAmount "
-              [class.down]="this.currentExpenses?.Summary?.Debit > this.currentExpenses?.Summary?.BudgetAmount">
-              <!-- <nb-icon
-                [icon]="(this.currentExpenses?.Summary?.Debit > this.currentExpenses?.Summary?.BudgetAmount) ? 'diagonal-arrow-right-up' : (this.currentExpenses?.Summary?.Debit < this.currentExpenses?.Summary?.BudgetAmount) ? 'diagonal-arrow-right-down' : 'checkmark'"
-                pack="eva" class="direction"></nb-icon> -->
-              {{(this.currentExpenses?.Summary?.Debit) | currency}}
-              
+        <div class="middle-section">
+          <span class="date">{{fromDate | date:'MM/dd/yy' }}</span>
+          <span class="date">{{toDate | date:'MM/dd/yy' }}</span>
+          <span class="action" title="previous period" (click)="loadExpenses('previous')"><</span>
+          <span class="action" title="next period" (click)="loadExpenses('next')">></span>
+        </div>
+        <div class="right-section">
+          <div class="values">
+            <div class="">
+              <span class="label">Expenses</span>
+              <div class="delta right value"
+                [class.up]="this.currentExpenses?.Summary?.Debit < this.currentExpenses?.Summary?.BudgetAmount "
+                [class.down]="this.currentExpenses?.Summary?.Debit > this.currentExpenses?.Summary?.BudgetAmount">
+                <nb-icon
+                  [icon]="(this.currentExpenses?.Summary?.Debit > this.currentExpenses?.Summary?.BudgetAmount) ? 'diagonal-arrow-right-up' : (this.currentExpenses?.Summary?.Debit < this.currentExpenses?.Summary?.BudgetAmount) ? 'diagonal-arrow-right-down' : 'checkmark'"
+                  pack="eva" class="direction"></nb-icon>
+                {{(this.currentExpenses?.Summary?.Debit) | currency}}
+              </div>
             </div>
-            <div class="separator">|</div>
-            <div class="">{{(this.currentExpenses?.Summary?.Balance) | currency}}</div>
-            <div class="separator">|</div>
-            <div class="second-value">{{this.currentExpenses?.Summary?.BudgetAmount | currency}}</div>
+            <div class="separator"></div>
+            <div class="">
+              <span class="label">Budget</span>
+              <div class="value">{{this.currentExpenses?.Summary?.BudgetAmount | currency}}</div>
+            </div>
+            <div class="separator"></div>
+            <div class="">
+              <span class="label">Balance</span>
+              <div class="value">{{(this.currentExpenses?.Summary?.Balance) | currency}}</div>
+            </div>
+            <div class="separator"></div>
+            <div class="">
+              <span class="label">Income</span>
+              <div class="value income">{{this.currentExpenses?.Summary?.Credit | currency}}</div>
+            </div>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </nb-card-header>
     <nb-card-body class="body">
       <div class="bar"></div>

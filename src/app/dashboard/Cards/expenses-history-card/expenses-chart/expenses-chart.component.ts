@@ -6,7 +6,6 @@ import am4themes_animated from '@amcharts/amcharts4/themes/animated';
 am4core.useTheme(am4themes_animated);
 
 import { HomeService } from '../../../../Services/home.service';
-// import { exec } from 'child_process';
 
 @Component({
   selector: 'app-expenses-chart',
@@ -80,19 +79,6 @@ export class ExpensesChartComponent implements OnInit {
 
   FormatChartData() {
     try {
-      // const month = new Array();
-      // month[0] = 'Jan';
-      // month[1] = 'Feb';
-      // month[2] = 'Mar';
-      // month[3] = 'Apr';
-      // month[4] = 'May';
-      // month[5] = 'Jun';
-      // month[6] = 'Jul';
-      // month[7] = 'Aug';
-      // month[8] = 'Sep';
-      // month[9] = 'Oct';
-      // month[10] = 'Nov';
-      // month[11] = 'Dec';
       if (this.data != null && this.data.length > 0) {
         for ( let i = 0 ; i < this.data.length ; i++ ) {
           const date = new Date(this.data[i].FromDate);

@@ -2,8 +2,15 @@
 @import '~@nebular/theme/styles/global/breakpoints';
 @import '../../../@theme/styles/themes.scss';
 
+.switch.checked {
+  background: lightgreen;
+}
+
 @include nb-install-component() {
     overflow: auto;
+    .header {
+      padding: .5rem 1.25rem;
+    }
   
     .item {
       display: flex;
@@ -46,22 +53,33 @@
 
     .exepnses-container {
       .header {
-        // padding: 0.5rem;
-        .row {
-          margin: 0rem;
-        }
-        .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem 1.25rem;
+        .left-section {
           color: red;
-          // margin: 0rem .5rem;
           .switch.checked { color: white; }
         }
-        .right {
-          padding: 0rem 0.5rem;
-          .value {
+        .middle-section {
+          .date, .action {
+            padding: 0 .5rem;
+          }
+          .action {
+            cursor: pointer;
+          }
+        }
+        .right-section {
+          // padding: 0rem 0.5rem;
+          .values {
             display: flex;
             float: right;
             .separator {
-              padding: 0rem 0.5rem;
+              margin: 0rem 0.5rem;
+              border-left: 1px solid gray;
+            }
+            .income {
+              color: #6CE274;
             }
           }
         }

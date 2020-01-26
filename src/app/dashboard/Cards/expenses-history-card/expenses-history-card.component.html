@@ -2,30 +2,35 @@
     <nb-card size="large">
         <nb-card-header class="header">
             <div class="row">
-                <div class="title left col-xl-6">Expenses
+                <div class="title left col-xl-6">
+                    <span>Expenses</span>
                     <!-- <ui-switch size="small" checkedlabel="YTD" uncheckedlabel="12M" [(ngModel)]="graphperiod" (change)="onSwitchChange($event)"></ui-switch> -->
                     <ui-switch size="small" checkedLabel="YTD" uncheckedLabel="12M" [(ngModel)]="graphperiod" (change)="onSwitchChange($event)"></ui-switch>
                 </div>
                 <div class="right col-xl-6">
-                    <div class="value">
+                    <div class="values">
                         <div class="">
                             <span class="label">Expenses</span>
-                            <div class="delta right first-value" [class.up]="(this.homeService.totalBudget) > this.homeService.totalExpenses" 
+                            <div class="delta right value" [class.up]="(this.homeService.totalBudget) > this.homeService.totalExpenses" 
                                             [class.down]="this.homeService.totalExpenses > this.homeService.totalBudget">
                                 <nb-icon [icon]="this.homeService.totalBudget > this.homeService.totalExpenses ? 'diagonal-arrow-right-up' : (this.homeService.totalBudget < this.homeService.totalExpenses) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction"></nb-icon>
                                 {{(this.homeService.totalExpenses) | currency}}
                             </div>
                         </div>
-                        
                         <div class="separator"></div>
                         <div class="">
                             <span class="label">Budget</span>
-                            <div class="second-value">{{this.homeService.totalBudget | currency}}</div>
+                            <div class="value">{{this.homeService.totalBudget | currency}}</div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="">
+                            <span class="label">Balance</span>
+                            <div class="value">{{ (this.homeService.totalBudget - this.homeService.totalExpenses) | currency}}</div>
                         </div>
                         <div class="separator"></div>
                         <div class="">
                             <span class="label">Income</span>
-                            <div class="second-value">{{this.homeService.totalIncome | currency}}</div>
+                            <div class="value income">{{this.homeService.totalIncome | currency}}</div>
                         </div>
                         
                     </div>
