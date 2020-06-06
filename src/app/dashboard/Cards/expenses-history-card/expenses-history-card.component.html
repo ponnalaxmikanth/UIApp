@@ -10,16 +10,16 @@
                 <div class="right col-xl-6">
                     <div class="values">
                         <div class="">
-                            <span class="label">Expenses</span>
+                            <span class="label"><a class="" routerLink="/usa/expenses" routerLinkActive="active">Expenses</a></span>
                             <div class="delta right value" [class.up]="(this.homeService.totalBudget) > this.homeService.totalExpenses" 
                                             [class.down]="this.homeService.totalExpenses > this.homeService.totalBudget">
-                                <nb-icon [icon]="this.homeService.totalBudget > this.homeService.totalExpenses ? 'diagonal-arrow-right-up' : (this.homeService.totalBudget < this.homeService.totalExpenses) ? 'diagonal-arrow-right-down' : 'checkmark'" pack="eva" class="direction"></nb-icon>
+                                <nb-icon [icon]="this.homeService.totalBudget > this.homeService.totalExpenses ? 'diagonal-arrow-right-down' : (this.homeService.totalBudget < this.homeService.totalExpenses) ? 'diagonal-arrow-right-up' : 'checkmark'" pack="eva" class="direction"></nb-icon>
                                 {{(this.homeService.totalExpenses) | currency}}
                             </div>
                         </div>
                         <div class="separator"></div>
                         <div class="">
-                            <span class="label">Budget</span>
+                            <span class="label"><a class="" routerLink="/usa/budget" routerLinkActive="active">Budget</a></span>
                             <div class="value">{{this.homeService.totalBudget | currency}}</div>
                         </div>
                         <div class="separator"></div>
@@ -29,7 +29,7 @@
                         </div>
                         <div class="separator"></div>
                         <div class="">
-                            <span class="label">Income</span>
+                            <span class="label"><a class="" routerLink="/usa/income" routerLinkActive="active">Income</a></span>
                             <div class="value income">{{this.homeService.totalIncome | currency}}</div>
                         </div>
                         

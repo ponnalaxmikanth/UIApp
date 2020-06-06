@@ -1,6 +1,7 @@
 <nb-card-header>
-    <i class="fa fa-btc" [class.up]="_currentValue?.Current?.Profit > 0" [class.down]="_currentValue?.Current?.Profit < 0"></i>
-  <span class="title">Digital Currency (Current)</span>
+    <i class="fa fa-btc" [class.up]="_currentValue?.Current?.CurrentValue > _currentValue?.Current?.Investment"
+        [class.down]="_currentValue?.Current?.CurrentValue < _currentValue?.Current?.Investment"></i>
+  <span class="title"><a class="" routerLink="/investment/usa/digital-currency" routerLinkActive="active">Digital Currency (Current)</a></span>
 </nb-card-header>
 <nb-card-body>
   <div class="row">
@@ -8,21 +9,23 @@
       <label>Investment</label>
     </div>
     <div class="col-md-6">
-      <label class="right">{{_currentValue?.Current?.Investment | currency}}</label>
+      <label class="right">{{_currentValue?.Current?.Investment | number}}</label>
     </div>
   </div>
   <div class="row divider"></div>
   <div class="row">
     <div class="col-md-6">
-      <label>Profit</label>
+      <label>Current Value</label>
     </div>
     <div class="col-md-6">
-      <div class="delta right" [class.up]="_currentValue?.Current?.Profit > 0"
-        [class.down]="_currentValue?.Current?.Profit < 0">
-        <nb-icon [icon]="(_currentValue?.Current?.Profit > 0) ? 'arrow-upward-outline' : 'arrow-downward-outline'"
-          pack="eva" class="direction"></nb-icon>
-        <label>{{_currentValue?.Current?.Profit | currency}}</label>
-      </div>
+      <div class="delta right" [class.up]="_currentValue?.Current?.CurrentValue > _currentValue?.Current?.Investment" 
+        [class.down]="_currentValue?.Current?.CurrentValue < _currentValue?.Current?.Investment">
+        <nb-icon [icon]="(_currentValue?.Current?.CurrentValue > _currentValue?.Current?.Investment) ? 'arrow-upward-outline' : 'arrow-downward-outline'" pack="eva" class="direction"></nb-icon>
+        
+        <label class="">
+          {{_currentValue?.Current?.CurrentValue | number}}
+        </label>
+    </div>
     </div>
   </div>
 </nb-card-body>

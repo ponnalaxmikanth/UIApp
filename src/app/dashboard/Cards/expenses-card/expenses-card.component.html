@@ -17,7 +17,7 @@
         <div class="right-section">
           <div class="values">
             <div class="">
-              <span class="label">Expenses</span>
+              <span class="label"><a class="" routerLink="/usa/expenses" routerLinkActive="active">Expenses</a></span>
               <div class="delta right value"
                 [class.up]="this.currentExpenses?.Summary?.Debit < this.currentExpenses?.Summary?.BudgetAmount "
                 [class.down]="this.currentExpenses?.Summary?.Debit > this.currentExpenses?.Summary?.BudgetAmount">
@@ -29,7 +29,7 @@
             </div>
             <div class="separator"></div>
             <div class="">
-              <span class="label">Budget</span>
+              <span class="label"><a class="" routerLink="/usa/budget" routerLinkActive="active">Budget</a></span>
               <div class="value">{{this.currentExpenses?.Summary?.BudgetAmount | currency}}</div>
             </div>
             <div class="separator"></div>
@@ -39,7 +39,7 @@
             </div>
             <div class="separator"></div>
             <div class="">
-              <span class="label">Income</span>
+              <span class="label"><a class="" routerLink="/usa/income" routerLinkActive="active">Income</a></span>
               <div class="value income">{{this.currentExpenses?.Summary?.Credit | currency}}</div>
             </div>
           </div>
@@ -75,6 +75,8 @@
               </div>
               <div class="separator"> / </div>
               <div class="second-value">{{ item.BudgetAmount | currency }}</div>
+              <div class="separator"> | </div>
+              <div class="second-value">{{ item.BudgetAmount - (item?.Debit - item?.Credit) | currency }}</div>
             </div>
           </div>
         </nb-list-item>

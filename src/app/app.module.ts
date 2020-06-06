@@ -16,24 +16,25 @@ import { MenuComponent } from './Layout/menu/menu.component';
 
 import { DashboardModule } from './dashboard/dashboard.module';
 import {DashboardComponent } from './dashboard/dashboard.component';
-import { StocksComponent } from './Investments/stocks/stocks.component';
-import { ExpensesComponent } from './Home/expenses/expenses.component';
-import { FundsComponent } from './Investments/funds/funds.component';
+// import { StocksComponent } from './Investments/stocks/stocks.component';
+// import { ExpensesComponent } from './Home/expenses/expenses.component';
 
 import { DigitalCurrencyService } from './Services/digital-currency.service';
 import { FundsService } from './Services/funds.service';
 import { HomeService } from './Services/home.service';
 import { StocksService } from './Services/stocks.service';
 import { AccountsService } from './Services/accounts.service';
-import { PerformanceComponent } from './Investments/funds/performance/performance.component';
+// import { PerformanceComponent } from './Investments/funds/performance/performance.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    HeaderComponent
+    HeaderComponent,
     //, DashboardComponent
-    , StocksComponent, ExpensesComponent, FundsComponent, PerformanceComponent
+    // StocksComponent,
+    // ExpensesComponent,
+    // PerformanceComponent
   ],
   imports: [
     BrowserModule,

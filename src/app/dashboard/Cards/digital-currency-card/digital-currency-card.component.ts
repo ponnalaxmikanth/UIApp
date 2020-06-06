@@ -17,6 +17,7 @@ export class DigitalCurrencyCardComponent implements OnInit {
   ngOnInit() {
     this._digitalCurrencyService.getCurrentValue().subscribe(val => {
       this.currCurrentValue = val;
+      console.log('digital currency: ', this.currCurrentValue);
     },
       error => {
         console.error('DigitalCurrencyCardComponent -- get digital currency Current Value', error);

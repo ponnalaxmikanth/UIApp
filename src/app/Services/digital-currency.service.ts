@@ -16,10 +16,10 @@ export class DigitalCurrencyService {
   }
 
   getCurrentValue(): Observable<any> {
-    if (!environment.useMockData) {
+    if (environment.useMockData) {
       return this.httpClient.get('assets/MockData/Stocks/CurrentValue.json');
     } else {
-      return this.httpClient.get(this.baseUrl + 'api/MutualFunds/getCurrentValue', httpOptions);
+      return this.httpClient.get(this.baseUrl + 'api/DigitalCurrency/GetInvestmentDetails');
     }
   }
 

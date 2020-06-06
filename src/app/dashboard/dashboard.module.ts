@@ -32,17 +32,43 @@ import { ExpensesHistoryCardComponent } from './Cards/expenses-history-card/expe
 import { ExpensesChartComponent } from './Cards/expenses-history-card/expenses-chart/expenses-chart.component';
 
 @NgModule({
-  declarations: [DashboardComponent, StocksCardComponent, StocksFrontCardComponent, StocksBackCardComponent, DigitalCurrencyCardComponent, FrontCardComponent, BackCardComponent, FundsCardComponent, AccountsCardComponent, FundsFrontCardComponent, AccountsFrontCardComponent, AccountsBackCardComponent, FundsBackCardComponent, ExpensesCardComponent, ExpensesHistoryCardComponent, ExpensesChartComponent],
+  declarations: [
+    DashboardComponent,
+    StocksCardComponent,
+    StocksFrontCardComponent,
+    StocksBackCardComponent,
+    DigitalCurrencyCardComponent,
+    FrontCardComponent,
+    BackCardComponent,
+    FundsCardComponent,
+    AccountsCardComponent,
+    FundsFrontCardComponent,
+    AccountsFrontCardComponent,
+    AccountsBackCardComponent,
+    FundsBackCardComponent,
+    ExpensesCardComponent,
+    ExpensesHistoryCardComponent,
+    ExpensesChartComponent
+  ],
   imports: [
     CommonModule
     , NbCardModule
     , NbThemeModule, NbSidebarModule, NbLayoutModule, NbButtonModule, NbActionsModule, NbIconModule, NbListModule
     , FormsModule
-    , UiSwitchModule
+    , UiSwitchModule.forRoot({ color: 'white',})
+      // .forRoot({
+      //   size: 'small',
+      //   color: 'white',
+      //   switchColor: 'red',
+      //   defaultBgColor: 'green',
+      //   defaultBoColor : 'green',
+      //   checkedLabel: 'on',
+      //   uncheckedLabel: 'off'
+      // })
     , RouterModule
-    //DashboardRoutingModule
+    // DashboardRoutingModule
   ],
-  //providers: [DigitalCurrencyService, FundsService, HomeService, StocksService],
+  // providers: [DigitalCurrencyService, FundsService, HomeService, StocksService],
   bootstrap: [DashboardComponent]
 })
 
