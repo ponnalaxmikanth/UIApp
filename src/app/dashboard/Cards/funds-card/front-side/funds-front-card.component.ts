@@ -10,6 +10,7 @@ export class FundsFrontCardComponent implements OnInit, OnChanges {
   @Input() fundsCurrentValue: any;
 
   public _fundsCurrentValue: any;
+  public profit: number;
   constructor() { }
 
   ngOnInit() {
@@ -19,6 +20,8 @@ export class FundsFrontCardComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges) {
     try {
       this._fundsCurrentValue = changes.fundsCurrentValue.currentValue;
+      this.profit = ((this._fundsCurrentValue.Current.CurrentValue - this._fundsCurrentValue.Current.Investment)
+                      / this._fundsCurrentValue.Current.Investment);
       //console.log('FundsFrontCardComponent -- ngOnChanges', this._fundsCurrentValue);
     }
     catch (ex) { console.error('FundsFrontCardComponent -- ngOnChanges', ex); }

@@ -15,17 +15,18 @@
           </div>
         </div>
         <div class="row divider"></div>
-        <div class="row">
-          <div class="col-md-6">
+        <div class="d-flex px-3">
+          <div class="mr-auto">
             <label>Current Value</label>
           </div>
-          <div class="col-md-6">
+          <div class="">
             <div class="delta right" [class.up]="_fundsCurrentValue?.Current?.CurrentValue > fundsCurrentValue?.Current?.Investment" [class.down]="_fundsCurrentValue?.Current?.CurrentValue < fundsCurrentValue?.Current?.Investment">
               <nb-icon [icon]="(_fundsCurrentValue?.Current?.CurrentValue > fundsCurrentValue?.Current?.Investment) ? 'arrow-upward-outline' : 'arrow-downward-outline'" pack="eva" class="direction"></nb-icon>
               
               <label class="">
-                  <i class="fa fa-rupee"></i>
+                <i class="fa fa-rupee"></i>
                 {{_fundsCurrentValue?.Current?.CurrentValue | number}}
+                ({{profit  | percent:'2.2-2'}})
               </label>
           </div>
           </div>
